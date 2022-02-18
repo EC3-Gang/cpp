@@ -42,13 +42,33 @@ module.exports = {
           ],
         },
         {
-          text: 'Guides and experiences',
+          text: 'The basics and most commonly used structures',
           children: [
-	    '/guide/darryl/README.md',
-	    '/guide/derrick/README.md',
-            '/guide/darren/README.md',
-            '/guide/weiyu/README.md',
-            '/guide/solutions/README.md',
+	          '/guide/basics/README.md',
+            '/guide/stl-data-structures/README.md',
+          ],
+        },
+        {
+          text: 'More advanced topics',
+          children: [
+	          '/guide/more-adv/README.md',
+            '/guide/more-adv/dp.md',
+            '/guide/more-adv/trees.md',
+            '/guide/more-adv/gt.md',
+            '/guide/more-adv/rf.md',
+          ],
+        },
+        {
+          text: 'Useful functions',
+          children: [
+	          '/guide/funcs/README.md',
+            '/guide/funcs/bs.md',
+          ],
+        },
+        {
+          text: 'Others',
+          children: [
+	          '/guide/solutions/',
           ],
         },
       ],

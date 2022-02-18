@@ -1,9 +1,9 @@
 ---
 lang: en-US
-title: Darren's experience
+title: STL Data Structures
 ---
 
-# STL Data Structures
+# STL Data Structures (mostly by Darren)
 
 I'm going to talk about some data structures found in the standard library and how to implement them,
 along with a few useful functions you should probably know about.

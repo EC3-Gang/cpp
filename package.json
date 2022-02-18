@@ -12,7 +12,7 @@
     "@vuepress/plugin-container": "^2.0.0-beta.35"
   },
   "scripts": {
-    "dev": "vuepress dev docs --port=80",
+    "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   }
 }

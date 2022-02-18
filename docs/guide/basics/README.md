@@ -1,8 +1,8 @@
 ---
 lang: en-us
-title: Darryl's Experiences
+title: The Most Basics
 ---
-# Darryl is not good at cpp but tries ig
+# The basics of the basics of C++ (by Darryl)
 
 So apparently we're supposed to write experience or something but I just learnt cpp a week ago so here is what I know.
 
@@ -20,7 +20,7 @@ So apparently we're supposed to write experience or something but I just learnt 
 #include <iostream>
 using namespace std;
 int main() {
-  cout<<"Hello World";
+  cout<< "Hello World";
   return 0;
 }
 ```
