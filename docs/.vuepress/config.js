@@ -41,7 +41,8 @@ module.exports = {
         {
           text: 'Guides and experiences',
           children: [
-            '/guide/derrick/README.md',
+	    '/guide/darryl/README.md',
+	    '/guide/derrick/README.md',
             '/guide/darren/README.md',
             '/guide/weiyu/README.md',
             '/guide/solutions/README.md',
