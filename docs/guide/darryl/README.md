@@ -16,18 +16,18 @@ So apparently we're supposed to write experience or something but I just learnt 
 
 ## Basic Programs
 ### Hello World
-```
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
   cout<<"Hello World";
   return 0;
-  }
- ```
+}
+```
  So basically, this program will return the text "Hello World". I'm going to go through how the code works.
- First off, #include will include certain files into a program. This will allow us to use whatever is in, in this case, iostream.
- "using namespace std" allows us to define what namespace we want to use. STD, in this case, stands for standard. Of course, you can forgo this and use std:: when you want to use it. However, it is better to define namespace .
- int main() {} Creates a function. The name of this function is main. The code is written in {}.
+ First off, `#include` will include certain files into a program. This will allow us to use whatever is in, in this case, `iostream`.
+ `using namespace std` allows us to define what namespace we want to use. STD, in this case, stands for standard. Of course, you can forgo this and use `std::` when you want to use it. However, it is better to define namespace .
+ `int main() {}` Creates a function. The name of this function is main. The code is written in `{}`.
  cout basically prints, or writes, a certain text. 
- In C++, you must end all arguments with ;
+ In C++, you must end all arguments with `;`.
  
