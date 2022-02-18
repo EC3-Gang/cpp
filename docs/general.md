@@ -34,6 +34,7 @@ int main()
 }
 ```
 <br>
+
 ### Others
 #### Don't use `std::endl`
 Debug output should be written to `std::cerr`; it's unit buffered, so every character gets flushed. There is rarely a need for `std::endl`, and getting in the habit of using it will lead to mysteriously slow code as it flushes the buffer. Just use `\n` unless you know you need to flush the buffer. If you're used to typing `endl`, you can always use `#define endl "\n"`. Read this [SO post](https://stackoverflow.com/a/35583210) for more info.
