@@ -1,4 +1,7 @@
 module.exports = {
+  head: [
+    ['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }]
+  ],
   // when using vuepress-vite package, you can omit this field
   // because vite is the default bundler
   bundler: '@vuepress/bundler-vite',
