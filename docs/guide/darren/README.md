@@ -195,8 +195,46 @@ int main() {
 	m.insert(pair<string, int>("abc", 123)); // can also insert like this
 
 	// loop through key and value
-	for (itr =  marks.begin(); itr !=  marks.end(); ++itr) {
+	for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
 		cout  << itr->first << ": " << itr->second << 'n';
 	}
 }
 ```
+
+## Sets
+
+A set is a more picky vector, it:
+
+- removes duplicate values
+- sorts every time you insert an element
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	set<int> s;
+
+	s.insert(40);
+	s.insert(35);
+	s.insert(55);
+
+	set<int>::iterator itr; // defines an iterator of the set
+	cout << "this set weighs " << s.size() << " kg\n";
+
+	// prints all the elements in the set
+	for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+
+	s.erase(s.begin(), s.find(55)); // remove 55
+
+	// lower_bound() and upper_bound(): returns an iterator to the first element which is
+	// equal to OR before / after the element in the set
+	cout << s.lower_bound(37) << " " << s.upper_bound(37);
+}
+```
+
+## Final Notes
+
+There are dozens of STL data structures out there, but these are the most popular ones.
+
+Anyway I copied most of them from <https://www.geeksforgeeks.org>.
