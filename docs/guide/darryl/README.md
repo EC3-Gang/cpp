@@ -16,7 +16,7 @@ So apparently we're supposed to write experience or something but I just learnt 
 
 ## Basic Programs
 ### Hello World
-```
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
