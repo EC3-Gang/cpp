@@ -29,6 +29,13 @@ module.exports = {
     ],
     sidebar: {
       '/': [
+				{
+          text: 'Intro',
+          children: [
+            '/',
+						'/general.md',
+          ],
+        },
         {
           text: 'Guides and experiences',
           children: [
