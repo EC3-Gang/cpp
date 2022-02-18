@@ -21,6 +21,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
     navbar: [
       {
         text: 'Home',
