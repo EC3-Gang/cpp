@@ -23,7 +23,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: Build app
-        run: yarn build
+        run: yarn build && echo domain.name > ./docs/.vuepress/dist/CNAME
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: eploy
