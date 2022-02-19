@@ -3,12 +3,19 @@ Bubble sort is a sorting algorithm that compares two adjacent elements and swaps
 
 Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort. It is one of the simplest sorting algorithms.
 
-- Worst and Average Case Time Complexity: `O(n*n)`. Worst case occurs when array is reverse sorted.
-- Best Case Time Complexity: `O(n)`. Best case occurs when array is already sorted.
-- Auxiliary Space: `O(1)`
-- Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
-- Sorting In Place: Yes
-- Stable: Yes
+| Cases | Time |
+| --- | --- |
+| Worst and Average Case Time Complexity | `O(n*n)`. Worst case occurs when array is reverse sorted. |
+| Best Case Time Complexity | `O(n)`. Best case occurs when array is already sorted. |
+| Auxiliary Space | `O(1)` |
+| Boundary Cases | Bubble sort takes minimum time (Order of n) when elements are already sorted. |
+
+| Property | :white_check_mark:/:x: |
+| --- | --- |
+| Sorting In Place | :white_check_mark: |
+| Stable | :white_check_mark: |
+
+
 
 ## Implementation
 
