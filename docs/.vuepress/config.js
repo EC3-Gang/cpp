@@ -1,5 +1,5 @@
 module.exports = {
-  base: './',
+  base: process.env.BUILD_PATH,
   head: [
     ['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }]
   ],
