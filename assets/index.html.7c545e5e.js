@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"Home",lang:"en-US",frontmatter:{lang:"en-US",title:"Home"},excerpt:"",headers:[{level:2,title:"Intro to CP",slug:"intro-to-cp",children:[]}],git:{updatedTime:1645238939e3,contributors:[{name:"Dusty",email:"mrgeek484@gmail.com",commits:1}]},filePathRelative:"README.md"};export{e as data};
