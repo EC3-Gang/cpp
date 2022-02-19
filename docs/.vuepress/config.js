@@ -24,6 +24,12 @@ module.exports = {
       }
     ],
     [
+      '@vuepress/plugin-google-analytics',
+      process.env.NODE_ENV === 'production' ? {
+        id: 'G-TYT36D3YZN',
+      } : false,
+    ],
+    [
       '@vuepress/plugin-toc',
       {
       }
