@@ -23,9 +23,15 @@ module.exports = {
         theme: 'one-dark-pro',
       }
     ],
+    [
+      '@vuepress/plugin-toc',
+      {
+      }
+    ],
   ],
   themeConfig: {
     docsDir: 'docs',
+    docsBranch: 'master',
     logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
     repo: 'EC3-Gang/cpp',
     navbar: [
@@ -65,6 +71,7 @@ module.exports = {
           children: [
 	          '/guide/funcs/README.md',
             '/guide/funcs/bs.md',
+            '/guide/funcs/bubblesort.md',
           ],
         },
         {

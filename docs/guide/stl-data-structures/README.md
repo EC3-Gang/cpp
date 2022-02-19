@@ -8,6 +8,8 @@ title: STL Data Structures
 I'm going to talk about some data structures found in the standard library and how to implement them,
 along with a few useful functions you should probably know about.
 
+[[toc]]
+
 ## Arrays
 
 By far the simplest data structure you should probably know about is the array.
@@ -66,7 +68,7 @@ int main() {
 
 ## Deque
 
-Pronounced 'deck' or 'd-q', I don't give two shakes about how it's pronounced.
+Pronounced 'deck' or 'd-q', I don't give a damn about how it's pronounced.
 
 It's a vector on steroids, allowing you to insert (from the front) and append (from the back) elements.
 It can also pop elements from the front & back.
