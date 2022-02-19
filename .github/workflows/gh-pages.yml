@@ -23,7 +23,7 @@ jobs:
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: Build app
-        run: yarn build && echo hcicppguide.me > ./docs/.vuepress/dist/CNAME
+        run: yarn build # && echo hcicppguide.me > ./docs/.vuepress/dist/CNAME
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
       - name: eploy
