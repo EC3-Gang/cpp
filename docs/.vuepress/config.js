@@ -25,6 +25,7 @@ module.exports = {
     ],
   ],
   themeConfig: {
+    docsDir: 'docs',
     logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
     repo: 'EC3-Gang/cpp',
     navbar: [
