@@ -1,4 +1,5 @@
 module.exports = {
+  base: './',
   head: [
     ['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }]
   ],
