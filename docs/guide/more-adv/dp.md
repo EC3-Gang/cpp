@@ -14,7 +14,7 @@ While this method works, it is far too slow and may check multiple numbers multi
 ### Top down DP
 Top down dynamic programming is a speedup of naive recursive functions, by preventing the need of recalculating the same function multiple times. This involves memoisation, which is the storing of previous answers.
 Top down Fibo algorithm:
-```cpp
+```cpp{1,3,5}
 long long memo[100005] //All initially set to -1
 long long sum(long long n) {
   if (memo[n] != -1) return memo[n];
