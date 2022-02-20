@@ -1,1 +1,0 @@
-const e={key:"v-0240e341",path:"/guide/solutions/",title:"Solutions for CodeBreaker problems",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"helloworld",slug:"helloworld",children:[]}],git:{updatedTime:164533075e4,contributors:[{name:"Canaris",email:"mrgeek484@gmail.com",commits:1}]},filePathRelative:"guide/solutions/README.md"};export{e as data};
