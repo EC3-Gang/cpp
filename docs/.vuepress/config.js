@@ -32,8 +32,18 @@ module.exports = {
 				  }
 				: false,
 		],
-		['@vuepress/plugin-toc', {}],
-		['@maginapp/katex', { delimiters: 'dollars' }],
+		[
+			'@vuepress/plugin-toc',
+			{
+				// nothing atm
+			},
+		],
+		[
+			'@maginapp/katex',
+			{
+				delimiters: 'dollars',
+			},
+		],
 	],
 	themeConfig: {
 		docsDir: 'docs',
