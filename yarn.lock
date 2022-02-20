@@ -7,6 +7,14 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.17.3.tgz#b07702b982990bf6fdc1da5049a23fece4c5c3d0"
   integrity sha512-7yJPvPV+ESz2IUTPbOL+YkIGyCqOyNIzdguKQuJGnH7bg1WTIifuM21YqokFt/THWh1AkCRn9IgoykTRCBVpzA==
 
+"@maginapp/vuepress-plugin-katex@^1.0.11":
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@maginapp/vuepress-plugin-katex/-/vuepress-plugin-katex-1.0.11.tgz#da8f7d7f43c53c1f4b383e67f1e49710da9d058c"
+  integrity sha512-QsO8FxU790DGkcBVIcoRxKeySqmma5PnPEmRjmsQW2nYH01bUHdQwOEB2ny1nAWL3PU8m09lMsVyGkMfue8DXw==
+  dependencies:
+    katex "^0.11.1"
+    markdown-it-texmath "^0.6.7"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -610,6 +618,11 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
+commander@^2.19.0:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
+
 connect-history-api-fallback@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/connect-history-api-fallback/-/connect-history-api-fallback-1.6.0.tgz#8b32089359308d111115d81cad3fceab888f97bc"
@@ -1160,6 +1173,13 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+katex@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
+  integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
+  dependencies:
+    commander "^2.19.0"
+
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
@@ -1206,6 +1226,11 @@ markdown-it-emoji@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-2.0.0.tgz#3164ad4c009efd946e98274f7562ad611089a231"
   integrity sha512-39j7/9vP/CPCKbEI44oV8yoPJTpvfeReTn/COgRhSpNrjWF3PfP/JUxxB0hxV6ynOY8KH8Y8aX9NMDdo6z+6YQ==
+
+markdown-it-texmath@^0.6.7:
+  version "0.6.9"
+  resolved "https://registry.yarnpkg.com/markdown-it-texmath/-/markdown-it-texmath-0.6.9.tgz#709f45b3c7f76a5f0157baf819ae80b9499a9ab4"
+  integrity sha512-0Nz9yycwji3r776RCG2lmCsc2bk+lovsaPQklNR3VZMobQ9x45TRMWo2E/J5bejG3qN58MuBKDQWhIA0r1AWVw==
 
 markdown-it@^12.3.2:
   version "12.3.2"
