@@ -231,7 +231,7 @@ int main() {
 
   // lower_bound() and upper_bound(): returns an iterator to the first element which is
   // equal to OR before / after the element in the set
-  cout << s.lower_bound(37) << " " << s.upper_bound(37);
+  cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
 }
 ```
 
