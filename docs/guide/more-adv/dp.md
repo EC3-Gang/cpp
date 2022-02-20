@@ -40,7 +40,7 @@ long long sum(long long n) {
 }
 ```
 
-The states are stored in `memo[]`, and the transition is `memo[n] = sum(n-1) + sum[n-2]`. The base cases are when `n <= 1`, `memo[n] = 1`;
+The states are stored in `memo[]`, and the transition is `memo[n] = sum[n - 1] + sum[n - 2]`. The base cases are when `n <= 1`, `memo[n] = n`.
 
 While this form of DP may be more intuitive sometimes, it usually takes up more memory.
 
