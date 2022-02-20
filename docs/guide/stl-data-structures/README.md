@@ -82,9 +82,9 @@ int main() {
 
   // gets the user to cin 5 elements and store them in the deque
   for (int i = 0; i < 5; i++) {
-	  long a;
-	  cin >> a;
-	  d.push_back(a);
+    long a;
+    cin >> a;
+    d.push_back(a);
   }
 
   d.push_front(55); // now 55 is at the front
@@ -109,16 +109,16 @@ You can only access the top element, and only erase the top element. (What kind 
 using namespace std;
 
 int main() {
-	stack<int> s;
-	s.push(5);
-	s.push(7);
-	s.push(69);
+  stack<int> s;
+  s.push(5);
+  s.push(7);
+  s.push(69);
 
-	cout << s.top() << " is currently 1st place in kahoot\n";
-	cout << "there are " << s.size() << " players\n";
+  cout << s.top() << " is currently 1st place in kahoot\n";
+  cout << "there are " << s.size() << " players\n";
 
-	while (!s.empty()) s.pop(); // check if the stack is empty, if not, keep popping!
-	cout << s.size() << " more players left\n";
+  while (!s.empty()) s.pop(); // check if the stack is empty, if not, keep popping!
+  cout << s.size() << " more players left\n";
 }
 ```
 
@@ -142,8 +142,8 @@ int main() {
 
   // quick way to see all the elements in the queue
   while (!q.empty()) {
-	  cout << q.front() << ' ';
-	  q.pop();
+    cout << q.front() << ' ';
+    q.pop();
   }
 
   // NOTE: notice that only 1 occurrence of 4 is printed out, because a queue removes duplicate values
@@ -170,8 +170,8 @@ int main() {
 
   // NOTE: notice that the elements are printed in ascending order!
   while (!pq.empty()) {
-	  cout << pq.front() << ' ';
-	  q.pop();
+    cout << pq.front() << ' ';
+    q.pop();
   }
 }
 ```
@@ -198,7 +198,7 @@ int main() {
 
   // loop through key and value
   for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-	  cout  << itr->first << ": " << itr->second << 'n';
+    cout  << itr->first << ": " << itr->second << 'n';
   }
 }
 ```
