@@ -22,10 +22,10 @@ module.exports = {
   bundler: '@vuepress/bundler-vite',
   markdown: {
     lineNumbers: true,
-  },
-  extendMarkdown: (md) => {
-    md.set({ breaks: true })
-    md.use(require('markdown-it-katex'))
+    extendMarkdown: (md) => {
+      md.set({ breaks: true })
+      md.use(require('markdown-it-katex'))
+    },
   },
   plugins: [
     [
