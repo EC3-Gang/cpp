@@ -1,6 +1,22 @@
 module.exports = {
   base: process.env.BUILD_PATH,
-  head: [['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css',
+      },
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css',
+      },
+    ],
+  ],
   // when using vuepress-vite package, you can omit this field
   // because vite is the default bundler
   bundler: '@vuepress/bundler-vite',
