@@ -28,13 +28,13 @@ At `n = 5`, `sum(2)` is recalculated 3 times.
 Top-down dynamic programming is a speedup of naive recursive functions, by preventing the need of recalculating the same function multiple times.
 This involves memoisation, which is the storing of previous solutions.
 
-Top down Fibonacci algorithm:
+Top-down Fibonacci algorithm:
 
 ```cpp{1,3,5}
-long long memo[100005]; //All initially set to -1
+long long memo[100005]; // All initially set to -1
 long long sum(long long n) {
   if (memo[n] != -1) return memo[n];
-  if (n <= 1) {memo[n] = n; return n;}
+  if (n <= 1) { memo[n] = n; return n; }
   memo[n] = sum(n - 1) + sum(n - 2);
   return memo[n];
 }
@@ -58,7 +58,7 @@ for (long long i = 2; i < n; i++) {
 }
 ```
 
-The states are stored in `memo[n]`, the base cases are `memo[0]` and `memo[1]`, and the transition is `memo[i] = memo[i-1] + memo[i-2]`.
+The states are stored in `memo[n]`, the base cases are `memo[0]` and `memo[1]`, and the transition is `memo[i] = memo[i - 1] + memo[i - 2]`.
 
 ### Conclusion
 
