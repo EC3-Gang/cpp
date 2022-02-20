@@ -1,0 +1,1 @@
+const e={key:"v-672d3068",path:"/guide/funcs/",title:"Useful functions",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1645357771e3,contributors:[{name:"g-e-o-m-e-t-r-i-c",email:"79387351+g-e-o-m-e-t-r-i-c@users.noreply.github.com",commits:1}]},filePathRelative:"guide/funcs/README.md"};export{e as data};
