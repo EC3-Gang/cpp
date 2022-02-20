@@ -33,6 +33,7 @@ module.exports = {
         : false,
     ],
     ["@vuepress/plugin-toc", {}],
+    ["@maginapp/katex", { delimiters: "dollars" }],
   ],
   themeConfig: {
     docsDir: "docs",
@@ -48,11 +49,11 @@ module.exports = {
     sidebar: {
       "/": [
         {
-          text: "Intro",
+          text: "Introduction",
           children: ["/", "/general.md"],
         },
         {
-          text: "Basics and STL Data Structures",
+          text: "Basics & STL Data Structures",
           children: [
             "/guide/basics/README.md",
             "/guide/stl-data-structures/README.md",

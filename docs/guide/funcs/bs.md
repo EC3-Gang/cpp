@@ -1,22 +1,29 @@
 # Binary Search
+
 ## Binary Search Explained
+
 Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). The basic steps to perform Binary Search are:
 
-1. Begin with an interval covering the whole array. 
-2. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. 
-3. Otherwise, narrow it to the upper half. 
+1. Begin with an interval covering the whole array.
+2. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.
+3. Otherwise, narrow it to the upper half.
 4. Go back to Step 2 until the value is found or the interval is empty.
 
 Visual illustration:
 ![](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
-*Image from GeeksforGeeks*
+_Image from GeeksforGeeks_
 
 ## Implementation
-There's...actually a built in function defined in header `<algorithm>` (`std::binary_search`). There's really no need to write your own. You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search). <br>
-Ok. I get it. You just feel restless and geeky and want to write your own Binary Search function. 
+
+There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
+There's really no need to write your own. You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search). <br>
+Ok. I get it. You just feel restless and geeky and want to write your own Binary Search function.
 ::: details Code
+
 Here you go nerds:
+
 ### Iteration method
+
 ```cpp
 // Binary Search in C++
 
@@ -24,7 +31,7 @@ Here you go nerds:
 using namespace std;
 
 int binarySearch(int array[], int x, int low, int high) {
-  
+
 	// Repeat until the pointers low and high meet each other
   while (low <= high) {
     int mid = low + (high - low) / 2;
@@ -44,7 +51,9 @@ int binarySearch(int array[], int x, int low, int high) {
 ```
 
 ### Recursive method
+
 This uses recursive functions, so you might want to go take a look at [this](/guide/more-adv/rf.md).
+
 ```cpp
 int binarySearch(int array[], int x, int low, int high) {
   if (high >= low) {
@@ -65,4 +74,5 @@ int binarySearch(int array[], int x, int low, int high) {
   return -1;
 }
 ```
+
 :::
