@@ -1,7 +1,9 @@
 # Recursive functions
-Recursive functions are when the function is called from within the same function. 
 
-Pseudo code:
+Recursive functions are when the function is called from within the same function.
+
+Pseudocode:
+
 ```js
 function fn(a, b) {
   if (a <= b) {
@@ -11,7 +13,9 @@ function fn(a, b) {
 }
 fn(1, 10);
 ```
+
 Output:
+
 ```
 1
 2
@@ -26,9 +30,11 @@ Output:
 ```
 
 ## Uses in CP
-Well...not a lot, to be honest. It TLE's when the there are too many recursions, but usually works for smaller inputs.
 
-Example of a recursive function in CP (calculates the Fibonaaci sequence):
+Well...not a lot, to be honest. It TLEs when the there are too many recursions, but usually works for smaller inputs.
+
+Example of a recursive function in CP (calculates the Fibonacci sequence):
+
 ```cpp{7-10}
 #include <iostream>
 #define endl "\n"
@@ -44,9 +50,10 @@ ll sum(ll n) {
 int main() {
   ll n;
   cin >> n;
-  for (int i = 0; i < n + 1; i++) cout << sum(i) << endl;  
+  for (int i = 0; i < n + 1; i++) cout << sum(i) << endl;
 }
 ```
-*The highlighted part is the recursive function*
+
+_The highlighted part is the recursive function._
 
 The above solution was written for [this problem](https://codebreaker.xyz/problem/fibo), but TLE'd on one of the last test cases.
