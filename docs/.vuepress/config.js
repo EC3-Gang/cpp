@@ -84,6 +84,7 @@ module.exports = {
           text: 'Others',
           children: [
 	          '/guide/solutions/',
+            '/guide/LICENSE.md',
           ],
         },
       ],
