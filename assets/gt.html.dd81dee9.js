@@ -1,0 +1,1 @@
+const e={key:"v-1da06924",path:"/guide/more-adv/gt.html",title:"GT",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1645337509e3,contributors:[{name:"g-e-o-m-e-t-r-i-c",email:"79387351+g-e-o-m-e-t-r-i-c@users.noreply.github.com",commits:1}]},filePathRelative:"guide/more-adv/gt.md"};export{e as data};
