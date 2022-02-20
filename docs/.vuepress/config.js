@@ -1,85 +1,102 @@
 module.exports = {
   base: process.env.BUILD_PATH,
-  head: [["link", { rel: "icon", href: "https://i.imgur.com/gh25FnY_d.png" }]],
+  head: [
+    ['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }]
+  ],
   // when using vuepress-vite package, you can omit this field
   // because vite is the default bundler
-  bundler: "@vuepress/bundler-vite",
+  bundler: '@vuepress/bundler-vite',
   markdown: {
     lineNumbers: true,
   },
   plugins: [
     [
-      "@vuepress/plugin-search",
+      '@vuepress/plugin-search',
       {
         locales: {
-          "/": {
-            placeholder: "Search",
+          '/': {
+            placeholder: 'Search',
           },
         },
       },
     ],
     [
-      "@vuepress/plugin-shiki",
+      '@vuepress/plugin-shiki',
       {
-        theme: "solarized-dark",
+        theme: 'solarized-dark',
       },
     ],
     [
-      "@vuepress/plugin-google-analytics",
-      process.env.NODE_ENV === "production"
+      '@vuepress/plugin-google-analytics',
+      process.env.NODE_ENV === 'production'
         ? {
-            id: "G-TYT36D3YZN",
+            id: 'G-TYT36D3YZN',
           }
         : false,
     ],
-    ["@vuepress/plugin-toc", {}],
-    ["@maginapp/katex", { delimiters: "dollars" }],
+    ['@vuepress/plugin-toc',
+      {
+        // nothing atm
+      }
+    ],
+    [
+      '@maginapp/katex',
+      {
+        delimiters: 'dollars'
+      }
+    ],
   ],
   themeConfig: {
-    docsDir: "docs",
-    docsBranch: "master",
-    logo: "https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand",
-    repo: "EC3-Gang/cpp",
+    docsDir: 'docs',
+    docsBranch: 'master',
+    logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
+    repo: 'EC3-Gang/cpp',
     navbar: [
       {
-        text: "Home",
-        link: "/",
+        text: 'Home',
+        link: '/',
       },
     ],
     sidebar: {
-      "/": [
+      '/': [
         {
-          text: "Introduction",
-          children: ["/", "/general.md"],
-        },
-        {
-          text: "Basics & STL Data Structures",
+          text: 'Introduction',
           children: [
-            "/guide/basics/README.md",
-            "/guide/stl-data-structures/README.md",
+            '/',
+            '/general.md'
           ],
         },
         {
-          text: "Advanced Topics",
+          text: 'Basics & STL Data Structures',
           children: [
-            "/guide/more-adv/README.md",
-            "/guide/more-adv/dp.md",
-            "/guide/more-adv/trees.md",
-            "/guide/more-adv/gt.md",
-            "/guide/more-adv/rf.md",
+            '/guide/basics/README.md',
+            '/guide/stl-data-structures/README.md',
           ],
         },
         {
-          text: "Useful Algorithms",
+          text: 'Advanced Topics',
           children: [
-            "/guide/funcs/README.md",
-            "/guide/funcs/bs.md",
-            "/guide/funcs/bubblesort.md",
+            '/guide/more-adv/README.md',
+            '/guide/more-adv/dp.md',
+            '/guide/more-adv/trees.md',
+            '/guide/more-adv/gt.md',
+            '/guide/more-adv/rf.md',
           ],
         },
         {
-          text: "Others",
-          children: ["/guide/solutions/", "/guide/LICENSE.md"],
+          text: 'Useful Algorithms',
+          children: [
+            '/guide/funcs/README.md',
+            '/guide/funcs/bs.md',
+            '/guide/funcs/bubblesort.md',
+          ],
+        },
+        {
+          text: 'Others',
+          children: [
+            '/guide/solutions/',
+            '/guide/LICENSE.md',
+          ],
         },
       ],
     },
