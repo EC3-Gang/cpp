@@ -27,14 +27,14 @@ Here's a short snippet showing what arrays can do:
 using namespace std;
 
 int main() {
-	int arr[5]; // defines an array of ints with size 5
-	arr[0] = 1; // sets the first element of the array to 1
-	arr[3] = 57; // sets the fourth element to 57
+  int arr[5]; // defines an array of ints with size 5
+  arr[0] = 1; // sets the first element of the array to 1
+  arr[3] = 57; // sets the fourth element to 57
 
-	cout << arr[3];
-	cin >> arr[2]; // get the user to input the third element of the array
+  cout << arr[3];
+  cin >> arr[2]; // get the user to input the third element of the array
 
-	cout << arr.size(); // size of the array
+  cout << arr.size(); // size of the array
 }
 ```
 
@@ -49,20 +49,20 @@ Erasing elements from anywhere in the vector is also allowed.
 using namespace std;
 
 int main() {
-	vector<int> v; // defines a vector of ints
-	v.push_back(5); // appends 5 to the vector
-	v.push_back(9);
-	v.push_back(6);
-	v.push_back(0);
+  vector<int> v; // defines a vector of ints
+  v.push_back(5); // appends 5 to the vector
+  v.push_back(9);
+  v.push_back(6);
+  v.push_back(0);
 
-	v.pop_back(); // now what does the vector contain?
+  v.pop_back(); // now what does the vector contain?
 
-	cout << v.size(); // size of the vector
-	cout << v.front() << ' ' << v.back(); // first and last elements
+  cout << v.size(); // size of the vector
+  cout << v.front() << ' ' << v.back(); // first and last elements
 
-	sort(v.begin(), v.end()); // sorts the vector
+  sort(v.begin(), v.end()); // sorts the vector
 
-	for (auto i : v) cout << i << ' '; // iterates through every element in the vector
+  for (auto i : v) cout << i << ' '; // iterates through every element in the vector
 }
 ```
 
@@ -78,23 +78,23 @@ It can also pop elements from the front & back.
 using namespace std;
 
 int main() {
-	deque<long> d; // creates a deque of long ints
+  deque<long> d; // creates a deque of long ints
 
-	// gets the user to cin 5 elements and store them in the deque
-	for (int i = 0; i < 5; i++) {
-		long a;
-		cin >> a;
-		d.push_back(a);
-	}
+  // gets the user to cin 5 elements and store them in the deque
+  for (int i = 0; i < 5; i++) {
+	  long a;
+	  cin >> a;
+	  d.push_back(a);
+  }
 
-	d.push_front(55); // now 55 is at the front
+  d.push_front(55); // now 55 is at the front
 
-	// d.size(), d.front() and d.back() still work
-	// sort(d.begin(), d.end() still works)
+  // d.size(), d.front() and d.back() still work
+  // sort(d.begin(), d.end() still works)
 
-	d.pop_back();
-	d.pop_front();
-	cout << "oh bother there are only " << d.size() << " elements left.";
+  d.pop_back();
+  d.pop_front();
+  cout << "oh bother there are only " << d.size() << " elements left.";
 }
 ```
 
@@ -132,21 +132,21 @@ queues add elements from the back and pop elements from the front (in case you d
 using namespace std;
 
 int main() {
-	queue<int> q;
-	q.push(5);
-	q.push(4);
-	q.push(4);
-	q.push(3);
+  queue<int> q;
+  q.push(5);
+  q.push(4);
+  q.push(4);
+  q.push(3);
 
-	cout << q.size() << '\n';
+  cout << q.size() << '\n';
 
-	// quick way to see all the elements in the queue
-	while (!q.empty()) {
-		cout << q.front() << ' ';
-		q.pop();
-	}
+  // quick way to see all the elements in the queue
+  while (!q.empty()) {
+	  cout << q.front() << ' ';
+	  q.pop();
+  }
 
-	// NOTE: notice that only 1 occurrence of 4 is printed out, because a queue removes duplicate values
+  // NOTE: notice that only 1 occurrence of 4 is printed out, because a queue removes duplicate values
 }
 ```
 
@@ -161,18 +161,18 @@ Priority queues sort the elements every time a new element is pushed in.
 using namespace std;
 
 int main() {
-	priority_queue<int> pq;
-	pq.push(5);
-	pq.push(6);
-	pq.push(3);
+  priority_queue<int> pq;
+  pq.push(5);
+  pq.push(6);
+  pq.push(3);
 
-	cout << pq.size() << '\n';
+  cout << pq.size() << '\n';
 
-	// NOTE: notice that the elements are printed in ascending order!
-	while (!pq.empty()) {
-		cout << pq.front() << ' ';
-		q.pop();
-	}
+  // NOTE: notice that the elements are printed in ascending order!
+  while (!pq.empty()) {
+	  cout << pq.front() << ' ';
+	  q.pop();
+  }
 }
 ```
 
@@ -185,21 +185,21 @@ A map is a key-value data structure, with a key being linked to a value (can be 
 using namespace std;
 
 int main() {
-	map<string, int> m;
-	m["yo"] = 6;
-	m["mom"] = 9;
-	m["so"] = 4;
-	m["fat"] = 420;
+  map<string, int> m;
+  m["yo"] = 6;
+  m["mom"] = 9;
+  m["so"] = 4;
+  m["fat"] = 420;
 
-	cout << m["fat"] << '\n';
-	cout << m.size() << '\n';
+  cout << m["fat"] << '\n';
+  cout << m.size() << '\n';
 
-	m.insert(pair<string, int>("abc", 123)); // can also insert like this
+  m.insert(pair<string, int>("abc", 123)); // can also insert like this
 
-	// loop through key and value
-	for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-		cout  << itr->first << ": " << itr->second << 'n';
-	}
+  // loop through key and value
+  for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
+	  cout  << itr->first << ": " << itr->second << 'n';
+  }
 }
 ```
 
@@ -215,23 +215,23 @@ A set is a more picky vector, it:
 using namespace std;
 
 int main() {
-	set<int> s;
+  set<int> s;
 
-	s.insert(40);
-	s.insert(35);
-	s.insert(55);
+  s.insert(40);
+  s.insert(35);
+  s.insert(55);
 
-	set<int>::iterator itr; // defines an iterator of the set
-	cout << "this set weighs " << s.size() << " kg\n";
+  set<int>::iterator itr; // defines an iterator of the set
+  cout << "this set weighs " << s.size() << " kg\n";
 
-	// prints all the elements in the set
-	for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+  // prints all the elements in the set
+  for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
 
-	s.erase(s.begin(), s.find(55)); // remove 55
+  s.erase(s.begin(), s.find(55)); // remove 55
 
-	// lower_bound() and upper_bound(): returns an iterator to the first element which is
-	// equal to OR before / after the element in the set
-	cout << s.lower_bound(37) << " " << s.upper_bound(37);
+  // lower_bound() and upper_bound(): returns an iterator to the first element which is
+  // equal to OR before / after the element in the set
+  cout << s.lower_bound(37) << " " << s.upper_bound(37);
 }
 ```
 
