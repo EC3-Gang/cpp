@@ -30,7 +30,7 @@ This involves memoisation, which is the storing of previous solutions.
 
 Top down Fibonacci algorithm:
 
-```cpp
+```cpp{1,3,5}
 long long memo[100005]; //All initially set to -1
 long long sum(long long n) {
   if (memo[n] != -1) return memo[n];
@@ -40,7 +40,7 @@ long long sum(long long n) {
 }
 ```
 
-The states are stored in `memo[]`, and the transition is `memo[n] = sum(n-1) + sum[n-2]`. The base cases are when `n <= 1`, `memo[n] = 1`;
+The states are stored in `memo[]`, and the transition is `memo[n] = sum[n - 1] + sum[n - 2]`. The base cases are when `n <= 1`, `memo[n] = n`.
 
 While this form of DP may be more intuitive sometimes, it usually takes up more memory.
 
