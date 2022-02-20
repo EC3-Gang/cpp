@@ -1,1 +1,0 @@
-const e={key:"v-008f5444",path:"/guide/LICENSE.html",title:"LICENSE",lang:"en-US",frontmatter:{title:"LICENSE"},excerpt:"",headers:[],git:{updatedTime:1645329486e3,contributors:[{name:"blackscreen1-dl",email:"69445371+blackscreen1-dl@users.noreply.github.com",commits:1}]},filePathRelative:"guide/LICENSE.md"};export{e as data};
