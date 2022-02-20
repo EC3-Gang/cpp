@@ -23,6 +23,10 @@ module.exports = {
   markdown: {
     lineNumbers: true,
   },
+  extendMarkdown: (md) => {
+    md.set({ breaks: true })
+    md.use(require('markdown-it-katex'))
+  },
   plugins: [
     [
       '@vuepress/plugin-search',
@@ -52,12 +56,6 @@ module.exports = {
       '@vuepress/plugin-toc',
       {
         // nothing atm
-      },
-    ],
-    [
-      '@maginapp/katex',
-      {
-        delimiters: 'dollars',
       },
     ],
   ],
