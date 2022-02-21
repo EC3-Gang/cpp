@@ -20,5 +20,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vuepress dev docs",
     "build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs"
+  },
+  "dependencies": {
+    "prettier": "^2.5.1"
   }
 }

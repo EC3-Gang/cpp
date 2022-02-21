@@ -57,15 +57,15 @@ tbody {
   --t-transform: 0.3s ease;
 
   // code blocks vars
-  --code-bg-color: #282c34;
+  --code-bg-color: #073642;
   --code-hl-bg-color: rgba(0, 0, 0, 0.66);
   --code-ln-color: #9e9e9e;
   --code-ln-wrapper-width: 3.5rem;
 
   // font vars
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-family-code: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
   // layout vars
   --navbar-height: 3.6rem;
@@ -164,9 +164,6 @@ html.dark {
   --c-danger-title: #610000;
   --c-danger-text: #3a0000;
   --c-details-bg: #073642;
-
-  // code blocks vars
-  --code-hl-bg-color: #073642;
 }
 
 // plugin-docsearch
