@@ -21,10 +21,7 @@ module.exports = {
 	// because vite is the default bundler
 	bundler: '@vuepress/bundler-vite',
 	extendMarkdown: (md) => {
-		md.use(require('markdown-it-katex'));
-	},
-	markdown: {
-		lineNumbers: true,
+		md.use(require('@traptitech/markdown-it-katex'), { 'blockClass': 'math-block', 'errorColor' : ' #cc0000' });
 	},
 	plugins: [
 		[

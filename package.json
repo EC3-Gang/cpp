@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "@maginapp/vuepress-plugin-katex": "^1.0.11",
+    "@traptitech/markdown-it-katex": "^3.5.0",
     "@vuepress/bundler-vite": "^2.0.0-beta.35",
     "@vuepress/plugin-container": "^2.0.0-beta.35",
     "@vuepress/plugin-git": "^2.0.0-beta.35",
