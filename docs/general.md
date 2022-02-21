@@ -3,15 +3,13 @@ lang: en-US
 title: General Tips
 ---
 
-# General Tips
+## General Tips
 
 ::: danger WHAT NOT TO DO AT ALL COSTS
 Before I start, I thought that you should know that there are a few things that you should avoid at all costs when doing Competitve Programming.
 
 1. Using Github Copilot or any other AI autocomplete assistants. You will be screamed at by certain contributors if you do.
    :::
-
-## How to increase the speed of your program
 
 ### Fast Input/Output
 

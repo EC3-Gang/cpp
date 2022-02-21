@@ -1,4 +1,4 @@
-# Solutions for [CodeBreaker](https://codebreaker.xyz) problems
+# Solutions to [Codebreaker](https://codebreaker.xyz) problems
 
 ## helloworld
 
@@ -11,7 +11,5 @@ int main() {
   return 0;
 }
 ```
-
-<br>
 
 Nothing else for now :D
