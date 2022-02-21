@@ -49,5 +49,3 @@ void bubbleSort(int arr[], int n) {
    }
 }
 ```
-
-_Code is sourced from GeeksforGeeks_
