@@ -1,4 +1,7 @@
+const { path } = require('@vuepress/utils');
+
 module.exports = {
+	theme: path.resolve(__dirname, './theme'),
 	base: process.env.BUILD_PATH,
 	head: [
 		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
