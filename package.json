@@ -1,33 +1,33 @@
 {
-  "name": "cpp",
-  "version": "0.1.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@maginapp/vuepress-plugin-katex": "^1.0.11",
-    "@traptitech/markdown-it-katex": "^3.5.0",
-    "@vuepress/bundler-vite": "^2.0.0-beta.35",
-    "@vuepress/plugin-container": "^2.0.0-beta.35",
-    "@vuepress/plugin-git": "^2.0.0-beta.35",
-    "@vuepress/plugin-google-analytics": "^2.0.0-beta.35",
-    "@vuepress/plugin-search": "^2.0.0-beta.35",
-    "@vuepress/plugin-shiki": "^2.0.0-beta.35",
-    "@vuepress/plugin-toc": "^2.0.0-beta.35",
-    "cross-env": "^7.0.3",
-    "eslint": "8",
-    "eslint-config-berry": "^0.15.5",
-    "eslint-plugin-md": "^1.0.19",
-    "vuepress": "^2.0.0-beta.35"
-  },
-  "scripts": {
-    "start": "yarn dev",
-    "dev": "cross-env NODE_ENV=development vuepress dev docs",
-    "build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-    "lint:eslint": "npx eslint .",
-    "format:prettier": "npx prettier --write ."
-  },
-  "dependencies": {
-    "katex": "^0.15.2",
-    "prettier": "^2.5.1"
-  }
+	"name": "cpp",
+	"version": "0.1.0",
+	"main": "index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@maginapp/vuepress-plugin-katex": "^1.0.11",
+		"@traptitech/markdown-it-katex": "^3.5.0",
+		"@vuepress/bundler-vite": "^2.0.0-beta.35",
+		"@vuepress/plugin-container": "^2.0.0-beta.35",
+		"@vuepress/plugin-git": "^2.0.0-beta.35",
+		"@vuepress/plugin-google-analytics": "^2.0.0-beta.35",
+		"@vuepress/plugin-search": "^2.0.0-beta.35",
+		"@vuepress/plugin-shiki": "^2.0.0-beta.35",
+		"@vuepress/plugin-toc": "^2.0.0-beta.35",
+		"cross-env": "^7.0.3",
+		"eslint": "8",
+		"eslint-config-berry": "^0.15.5",
+		"eslint-plugin-md": "^1.0.19",
+		"vuepress": "^2.0.0-beta.35"
+	},
+	"scripts": {
+		"start": "yarn dev",
+		"dev": "cross-env NODE_ENV=development vuepress dev docs",
+		"build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
+		"lint:eslint": "npx eslint .",
+		"format:prettier": "npx prettier --write ."
+	},
+	"dependencies": {
+		"katex": "^0.15.2",
+		"prettier": "^2.5.1"
+	}
 }
