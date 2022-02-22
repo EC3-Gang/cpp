@@ -1,1 +1,0 @@
-const t={key:"v-008f5444",path:"/guide/LICENSE.html",title:"LICENSE",lang:"en-US",frontmatter:{title:"LICENSE"},excerpt:"",headers:[],git:{updatedTime:1645496181e3,contributors:[{name:"DustyIDK",email:"",commits:1}]},filePathRelative:"guide/LICENSE.md"};export{t as data};
