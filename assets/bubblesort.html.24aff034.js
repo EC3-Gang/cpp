@@ -1,0 +1,1 @@
+const e={key:"v-33854da3",path:"/guide/funcs/bubblesort.html",title:"Bubble Sort",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Implementation",slug:"implementation",children:[]}],git:{updatedTime:1645496181e3,contributors:[{name:"DustyIDK",email:"",commits:1}]},filePathRelative:"guide/funcs/bubblesort.md"};export{e as data};
