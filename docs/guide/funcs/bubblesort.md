@@ -8,9 +8,9 @@ It is one of the simplest sorting algorithms.
 
 | Cases                      | Time                                                                          |
 | -------------------------- | ----------------------------------------------------------------------------- |
-| Worst-Case Time Complexity | `O(n^2)`. Worst case occurs when array is reverse sorted.                     |
-| Best-Case Time Complexity  | `O(n)`. Best case occurs when array is already sorted.                        |
-| Auxiliary Space            | `O(1)`                                                                        |
+| Worst-Case Time Complexity | &Oscr;(n<sup>2</sup>). Worst case occurs when array is reverse sorted.        |
+| Best-Case Time Complexity  | &Oscr;(n<sup>2</sup>). Best case occurs when array is already sorted.         |
+| Auxiliary Space            | &Oscr;(1)                                                                     |
 | Boundary Cases             | Bubble sort takes minimum time (order of n) when elements are already sorted. |
 
 | Property         | :white_check_mark:/:x: |

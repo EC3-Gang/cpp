@@ -4,3 +4,4 @@ node_modules
 dist
 .replit
 replit.nix
+yarn-error.log

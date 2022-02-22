@@ -1,9 +1,9 @@
 {
-  "extends": ["berry"],
-  "overrides": [
-    {
-      "files": ["*.md"],
-      "parser": "markdown-eslint-parser"
-    }
-  ]
+	"extends": ["berry"],
+	"overrides": [
+		{
+			"files": ["*.md"],
+			"parser": "markdown-eslint-parser"
+		}
+	]
 }
