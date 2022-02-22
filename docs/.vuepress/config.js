@@ -5,6 +5,13 @@ module.exports = {
 	base: process.env.BUILD_PATH,
 	head: [
 		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
+		[
+			'link',
+			{
+				rel: 'stylesheet',
+				href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css',
+			},
+		],
 		/* [
 			'script',
 			{
@@ -24,13 +31,6 @@ module.exports = {
 			'link',
 			{
 				rel: 'stylesheet',
-				href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css',
-			},
-		],
-		[
-			'link',
-			{
-				rel: 'stylesheet',
 				href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css',
 			},
 		], */
@@ -38,11 +38,9 @@ module.exports = {
 	// when using vuepress-vite package, you can omit this field
 	// because vite is the default bundler
 	bundler: '@vuepress/bundler-vite',
-	extendMarkdown: (md) => {
-		md.use(require('@traptitech/markdown-it-katex'), {
-			blockClass: 'math-block',
-			errorColor: ' #cc0000',
-		});
+	extendsMarkdown: (md) => {
+		md.set({ breaks: true });
+		md.use(require('@neilsustc/markdown-it-katex'));
 	},
 	plugins: [
 		[

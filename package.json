@@ -4,6 +4,7 @@
 	"main": "index.js",
 	"license": "MIT",
 	"devDependencies": {
+		"@commenthol/markdown-it-katex": "^2.0.7",
 		"@maginapp/vuepress-plugin-katex": "^1.0.11",
 		"@traptitech/markdown-it-katex": "^3.5.0",
 		"@vuepress/bundler-vite": "^2.0.0-beta.35",
@@ -27,6 +28,7 @@
 		"format:prettier": "npx prettier --write ."
 	},
 	"dependencies": {
+		"@neilsustc/markdown-it-katex": "^1.0.0",
 		"katex": "^0.15.2",
 		"prettier": "^2.5.1"
 	}
