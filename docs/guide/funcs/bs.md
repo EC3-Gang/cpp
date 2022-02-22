@@ -10,13 +10,14 @@ Binary Search is a searching algorithm used in a sorted array by repeatedly divi
 4. Go back to Step 2 until the value is found or the interval is empty.
 
 Visual illustration:
-![](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
+![binary search](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
 _Image from GeeksforGeeks_
 
 ## Implementation
 
 There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
-There's really no need to write your own. You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search). <br>
+There's really no need to write your own. You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
+
 Ok. I get it. You just feel restless and geeky and want to write your own Binary Search function.
 ::: details Code
 
@@ -32,7 +33,7 @@ using namespace std;
 
 int binarySearch(int array[], int x, int low, int high) {
 
-	// Repeat until the pointers low and high meet each other
+  // Repeat until the pointers low and high meet each other
   while (low <= high) {
     int mid = low + (high - low) / 2;
 

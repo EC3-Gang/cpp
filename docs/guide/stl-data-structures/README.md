@@ -3,14 +3,14 @@ lang: en-US
 title: STL Data Structures
 ---
 
-# STL Data Structures (mostly by Darren)
+## STL Data Structures (mostly by Darren)
 
 I'm going to talk about some data structures found in the standard library and how to implement them,
 along with a few useful functions you should probably know about.
 
 [[toc]]
 
-## Arrays
+### Arrays
 
 By far the simplest data structure you should probably know about is the array.
 
@@ -38,7 +38,7 @@ int main() {
 }
 ```
 
-## Vectors
+### Vectors
 
 Basically arrays with the capability to append elements (from the end) and pop elements from the back.
 
@@ -66,7 +66,7 @@ int main() {
 }
 ```
 
-## Deque
+### Deques
 
 Pronounced 'deck' or 'd-q', I don't give a damn about how it's pronounced.
 
@@ -98,7 +98,7 @@ int main() {
 }
 ```
 
-## Stacks
+### Stacks
 
 Stacks are basically stacks of _roti prata_ (or your mountain of procrastinated homework).
 
@@ -122,7 +122,7 @@ int main() {
 }
 ```
 
-## Queue
+### Queues
 
 Like the perpetually long canteen queue in the HS Canteen during 1:30 pm lunch break,
 queues add elements from the back and pop elements from the front (in case you don't know how a real-life queue works).
@@ -150,7 +150,7 @@ int main() {
 }
 ```
 
-## Priority Queue
+### Priority Queues
 
 Like a queue, but the most popular boy is now at the end perpetually.
 
@@ -176,7 +176,7 @@ int main() {
 }
 ```
 
-## Map
+### Maps
 
 A map is a key-value data structure, with a key being linked to a value (can be different datatype).
 
@@ -203,7 +203,7 @@ int main() {
 }
 ```
 
-## Sets
+### Sets
 
 A set is a more picky vector, it:
 
@@ -235,7 +235,7 @@ int main() {
 }
 ```
 
-## Final Notes
+### Final Notes
 
 There are dozens of STL data structures out there, but these are the most popular ones.
 
