@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vuepress dev docs",
     "build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "npx eslint .",
+    "format:prettier": "npx prettier --write ."
   },
   "dependencies": {
     "prettier": "^2.5.1"
