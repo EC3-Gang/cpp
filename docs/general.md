@@ -22,8 +22,13 @@ ios::sync_with_stdio(false);
 cin.tie(nullptr);
 ```
 
-However, do note that if you include `ios::sync_with_stdio(false)`, then mixing C (`scanf`/`printf`) and C++ (`cin`, `cout`) style I/O may produce unexpected results.
-The upside is that both `cin`/`cout` become faster. Including `cin.tie(nullptr)` will reduce the runtime if you are using only `cin` and `cout`.
+However, do note that if you include `ios::sync_with_stdio(false)`,
+then mixing C (`scanf`/`printf`) and C++ (`cin`, `cout`) style I/O
+may produce unexpected results.
+
+The upside is that both `cin`/`cout` become faster.
+Including `cin.tie(nullptr)` will reduce the runtime
+if you are using only `cin` and `cout`.
 
 #### Option 2: Use `scanf`/`printf`
 
@@ -45,8 +50,10 @@ int main() {
 
 #### Don't use `std::endl`
 
-Debug output should be written to `std::cerr`; it's unit buffered, so every character gets flushed.
-There is rarely a need for `std::endl`, and getting in the habit of using it will lead to mysteriously slow code as it flushes the buffer.
-Just use `\n` unless you know you need to flush the buffer.
+Debug output should be written to `std::cerr`;
+it's unit buffered, so every character gets flushed.
+There is rarely a need for `std::endl`, and getting in the habit of using it
+will lead to mysteriously slow code as it flushes the buffer.
 
-If you're used to typing `endl`, you can always use `#define endl "\n"`. Read this [SO post](https://stackoverflow.com/a/35583210) for more info.
+If you're used to typing `endl`, you can always use `#define endl "\n"`.
+Read this [SO post](https://stackoverflow.com/a/35583210) for more info.
