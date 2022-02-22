@@ -1,5 +1,5 @@
 {
-  "extends": ["berry", "plugin:md/recommended"],
+  "extends": ["berry"],
   "overrides": [
     {
       "files": ["*.md"],
