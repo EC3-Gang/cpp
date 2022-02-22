@@ -6,7 +6,7 @@ Binary Search is a searching algorithm used in a sorted array by
 repeatedly dividing the search interval in half.
 
 The idea of binary search is to use the information that the array is sorted and
-reduce the time complexity to &Oscr;(log n).
+reduce the time complexity to $\mathcal{O}(\log n)$.
 
 The basic steps to perform Binary Search are:
 
@@ -23,8 +23,7 @@ _Image from GeeksforGeeks_
 
 There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
 There's really no need to write your own.
-You can read more about it
-[here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
+You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
 
 Ok. I get it. You just feel restless and geeky and want to
 write your own Binary Search function.

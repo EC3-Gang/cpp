@@ -21,7 +21,7 @@ long long sum(long long n) {
 ```
 
 While this method works, it is far too slow and may check multiple numbers multiple times.
-At `n = 5`, `sum(2)` is recalculated 3 times.
+At $n = 5$, $\text{sum}(n)$ is recalculated 3 times.
 
 ### Top-down DP
 
@@ -40,7 +40,7 @@ long long sum(long long n) {
 }
 ```
 
-The states are stored in `memo[]`, and the transition is `memo[n] = sum[n - 1] + sum[n - 2]`. The base cases are when `n <= 1`, `memo[n] = n`.
+The states are stored in $\text{memo}[]$, and the transition is $\text{memo}[n] = \text{sum}[n - 1] + \text{sum}[n - 2]$. The base cases are when $n \leq 1$, $\text{memo}[n] = n$.
 
 While this form of DP may be more intuitive sometimes, it usually takes up more memory.
 
@@ -58,7 +58,7 @@ for (long long i = 2; i < n; i++) {
 }
 ```
 
-The states are stored in `memo[n]`, the base cases are `memo[0]` and `memo[1]`, and the transition is `memo[i] = memo[i - 1] + memo[i - 2]`.
+The states are stored in $\text{memo}[n]$, the base cases are $\text{memo}[0]$ and $\text{memo}[1]$, and the transition is $\text{memo}[i] = \text{memo}[i - 1] + \text{memo}[i - 2]$.
 
 ### Conclusion
 
