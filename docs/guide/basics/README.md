@@ -14,11 +14,11 @@ I just learnt `cpp` a week ago so here is what I know.
 
 | Data Type | Size (in bytes) | Stores                                    | Example            |
 | --------- | --------------- | ----------------------------------------- | ------------------ |
-| `int`     | 4               | Numbers (-2 147 483 648 to 2 147 483 647) | 12 442             |
-| `float`   | 4               | Decimal numbers (up to 7 d.p.)            | 5.63562            |
-| `double`  | 8               | Decimal numbers (up to 15 d.p.)           | 3.1415926535879732 |
-| `bool`    | 1               | `true` or `false` values                  | `true`, `false`    |
-| `char`    | 1               | A single character                        | `'D'`, `'$'`       |
+| `int`     | $4$               | Numbers ( $2 147 483 648$ to $2 147 483 647$) | $12 442$             |
+| `float`   | $4$               | Decimal numbers (up to 7 d.p.)            | $5.63562$           |
+| `double`  | $8$               | Decimal numbers (up to 15 d.p.)           | $3.1415926535879732$ |
+| `bool`    | $1$               | `true` or `false` values                  | `true`, `false`    |
+| `char`    | $1$               | A single character                        | `'D'`, `'$'`       |
 | `string`  | variable        | Multi-character text                      | `'hi mom'`         |
 
 ### Data Type Modifiers
@@ -36,14 +36,14 @@ Note that the default modified datatype is `int`.
 
 | Modified Datatype    | Size (in bytes) | Range                                 |
 | -------------------- | --------------- | ------------------------------------- |
-| `short`              | 2               | -32 768 to 32 767                     |
-| `unsigned short`     | 2               | 0 to 65 535                           |
-| `unsigned`           | 4               | 0 to 4 294 967 295                    |
-| `long`               | 4               | -2 147 483 648 to 2 147 483 647       |
-| `unsigned long`      | 4               | 0 to 4 294 967 295                    |
-| `long long`          | 8               | -2<sup>63</sup> to 2<sup>63</sup> - 1 |
-| `unsigned long long` | 8               | 0 to 18 446 744 073 709 551 615       |
-| `long double`        | 12              | -                                     |
+| `short`              | $2$               | $-32 768$ to $32 767$                     |
+| `unsigned short`     | $2$               | $0$ to $65 535$                           |
+| `unsigned`           | $4$               | $0$ to $4 294 967 295$                    |
+| `long`               | $4$               | $-2 147 483 648$ to $2 147 483 647$       |
+| `unsigned long`      | $4$               | $0$ to $4 294 967 295$                    |
+| `long long`          | $8$               | $-2^{63}$ to $2^{63 - 1}$ |
+| `unsigned long long` | $8$               | $0$ to $18 446 744 073 709 551 615$       |
+| `long double`        | $12$              | -                                     |
 
 ## Basic Programs
 
