@@ -11,14 +11,17 @@ import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 </template>
 
 <script>
-import 'katex/dist/katex.min.css';
-import renderMathInElement from 'katex/dist/contrib/auto-render.mjs';
+// import 'katex/dist/katex.min.css';
+// import renderMathInElement from 'katex/dist/contrib/auto-render.mjs';
 
 export default {
 	name: 'theme',
-	mounted() {
+	/* mounted() {
 		renderMathInElement(document.body);
 	},
+	updated() {
+		renderMathInElement(document.body);
+	} */
 };
 </script>
 
