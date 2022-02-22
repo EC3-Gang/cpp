@@ -11,8 +11,8 @@ import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 </template>
 
 <script>
-import 'https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css';
-import renderMathInElement from "https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.mjs";
+import 'katex/dist/katex.min.css';
+import renderMathInElement from "katex/dist/contrib/auto-render.mjs";
 	
 export default {
 	name: 'theme',
