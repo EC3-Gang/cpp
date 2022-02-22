@@ -12,35 +12,33 @@ module.exports = {
 				href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css',
 			},
 		],
-		/* [
-			'script',
-			{
-				defer: true,
-				src: 'https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js',
-			},
-		],
-		[
-			'script',
-			{
-				defer: true,
-				src: 'https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js',
-				onload: 'renderMathInElement(document.body);',
-			},
-		],
-		[
-			'link',
-			{
-				rel: 'stylesheet',
-				href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css',
-			},
-		], */
 	],
 	// when using vuepress-vite package, you can omit this field
 	// because vite is the default bundler
 	bundler: '@vuepress/bundler-vite',
+	bundlerConfig: {
+		vuePluginOptions: {
+			template: {
+				compilerOptions: {
+					isCustomElement: (tag) => {
+						return ([
+							'mi',
+							'mo',
+							'mn',
+							'msup',
+							'mrow',
+							'annotation',
+							'semantics',
+							'math',
+						].includes(tag));
+					},
+				},
+			},
+		},
+	},
 	extendsMarkdown: (md) => {
-		md.set({ breaks: true });
-		md.use(require('@neilsustc/markdown-it-katex'));
+		// md.set({ breaks: true });
+		md.use(require('@commenthol/markdown-it-katex'));
 	},
 	plugins: [
 		[
