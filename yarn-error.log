@@ -1,58 +1,65 @@
 Arguments: 
-  /nix/store/d0z9k8dpd4ryalfmnyaahybri8p49ibs-nodejs-14.17.5/bin/node /nix/store/xb5x3axy5sj1scpv29hr35sz4wz26kyz-yarn-1.22.11/bin/yarn start
+  C:\Users\charl\AppData\Local\nvs\default\node.exe C:\Users\charl\.yarn\releases\yarn-1.22.15.cjs add --dev @types/neilsustc__markdown-it-katex
 
 PATH: 
-  /nix/store/w07a7k61dw5gnsyxj3kgcq3shr76jax8-bash-interactive-4.4-p23/bin:/nix/store/435paza0j48aa9vgvf6r2l12nrg4ld11-patchelf-0.12/bin:/nix/store/4xs1xyj8728yvh9y5v6ji819kwgfy2fv-gcc-wrapper-10.3.0/bin:/nix/store/dlni53myj53kx20pi4yhm7p68lw17b07-gcc-10.3.0/bin:/nix/store/6z35qvn00xrjvaznv9kfy8xddbbdz4gl-glibc-2.33-47-bin/bin:/nix/store/1570w56jrkvr90w9x158vyb5vahnk18v-coreutils-8.32/bin:/nix/store/29bjq5hw1qglybp1a5f3ij9gxc2fyf94-binutils-wrapper-2.35.1/bin:/nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin:/nix/store/bwxril521b35zlf4x2g32hll64rzfhck-nodejs-16.7.0/bin:/nix/store/xb5x3axy5sj1scpv29hr35sz4wz26kyz-yarn-1.22.11/bin:/nix/store/fyas5w36nr5qwq10y8ac9km5s7mgyw6n-gh-2.0.0/bin:/nix/store/ihxk2vlm0vi7c4j3gpm084kbxvz6v585-findutils-4.8.0/bin:/nix/store/kjx1mv85c5cgsrr4bwar22j7hbwj834m-diffutils-3.7/bin:/nix/store/gm2w08wwsa3vd500d8vq879s2lv65ldh-gnused-4.8/bin:/nix/store/v0slhpb2y3xa7gmv4q6gblkdk7n0f09j-gnugrep-3.6/bin:/nix/store/2wn093wbc6ps4brcsppxjd14vxvaa8a2-gawk-5.1.0/bin:/nix/store/5bxrjkyvqmzn1p897652y3lwa9fxagpw-gnutar-1.34/bin:/nix/store/liva1jnjdskrn57s42kfawr2zz66szzm-gzip-1.10/bin:/nix/store/ih2zkh2mbrx2c766ryk2i9hhlkly7snr-bzip2-1.0.6.0.2-bin/bin:/nix/store/pvkiiw0mp1yx0b21b7k105yywccychgh-gnumake-4.3/bin:/nix/store/dpjnjrqbgbm8a5wvi1hya01vd8wyvsq4-bash-4.4-p23/bin:/nix/store/aicl3kwfnaizk45aygm8bviqv7lk0a16-patch-2.7.6/bin:/nix/store/7jk6k46f56rszzc1bxi8mdrvcw53pym4-xz-5.2.5-bin/bin:/nix/store/l78ls0bkabx1hlfcnllx9h80nw5ba0dc-prybar-elisp-0.0.0-fc9ff1e/bin:/nix/store/h9vsw39hv4r8vy0mnfvrqg51zkkdjm84-prybar-lua-0.0.0-fc9ff1e/bin:/nix/store/qf55q068f3mkm20vphwb09ca6m1s0w2g-prybar-python3-0.0.0-fc9ff1e/bin:/nix/store/zmkx90h5sv62x6fb6l86zqkifns6l3xw-prybar-sqlite-0.0.0-fc9ff1e/bin:/nix/store/sz5ymbkxj129pfjwwil3qkqvmxy4y731-prybar-tcl-0.0.0-fc9ff1e/bin:/nix/store/lj3zivhflhp2vg1ha3873vnl9qxf90xx-upm-0.0.0-d09be07/bin:/nix/store/0gjdb2pimzw84bdb81g3z1fy23wzxs7n-pid1-0.0.0-4137432/bin:/nix/store/22jj08nss8zvbgk52ikj09ssg6rw84rv-silver-searcher-2.2.0/bin:/nix/store/aw2a9ws5lwqxv0kz63srvkaqpcmfspg0-bash/bin:/nix/store/176gh50y24c0lx2bnnmsvf9wazb73php-coreutils-9.0/bin:/nix/store/zaamc32wijqka1mg8w2gr1f6bgvs7yyz-vscode-cpptools-dap-1.3.1/bin:/nix/store/ann2w0blx5vrc8mw1hwnvb37gry6ci9a-replit-python-dap-wrapper-1.0.0/bin:/nix/store/mfzrmyqbdwi8jdws5gfm8jb2n716dxn7-node-dap/bin:/nix/store/hhzckydwi442l85smbd512xlwp2qarxv-fluxbox/bin:/nix/store/mviq50cwhsyjjiq33g3y89vdg42bkrcv-prybar-nodejs-0.0.0-fc9ff1e/bin:/nix/store/mav4251if1ahjq5vkpwycyyvnmy459c4-pulseaudio-14.2/bin:/nix/store/2py1rvdx7y7fbi0yffw7dq2bacd15605-rfbproxy-0.0.0-b81eb2f/bin:/nix/store/0b2bvviijkvq2nvm04dbq3lwlq7h742m-tigervnc-1.12.0/bin:/nix/store/7v07bmyfjq0jdnx6xwxlib05na8kksdf-xwininfo-1.1.4/bin:/nix/store/gfvyxpnr8ji58pdhy7ns4zqy57z34aqm-replbox/bin:/home/runner/.nix-profile/bin:/home/runner/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;D:\code\coding\Git\cmd;C:\Users\charl\AppData\Local\Microsoft\WindowsApps\python.exe;C:\Users\charl\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\Scripts;C:\Users\charl\AppData\Local\Microsoft\WindowsApps;C:\Users\charl\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\charl\AppData\Local\Programs\Python\Python39\Scripts;D:\code\programs\7-Zip;C:\Users\charl\AppData\Local\Programs\Microsoft VS Code;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\Hostx64\x64;C:\Program Files\Sublime Text;C:\Users\charl\OneDrive\Attachments\Path;D:\code\coding\Python\crawler;C:\Program Files\PostgreSQL\13\bin;C:\Users\charl\AppData\Local\Microsoft\WindowsApps\;C:\Program Files\jq;C:\ProgramData\chocolatey\bin;D:\code\coding\Git\bin;C:\Users\charl\AppData\Local\Programs\Microsoft VS Code Insiders;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\;C:\Program Files\LLVM\bin;C:\Program Files\VcXsrv;C:\metasploit-framework\bin\;C:\Program Files\WinHTTrack;C:\Program Files (x86)\Nmap;C:\Users\charl\AppData\Local\Microsoft\WindowsApps;C:\Users\charl\AppData\Roaming\npm;C:\Users\charl\AppData\Local\GitHubDesktop\bin;C:\Users\charl\AppData\Local\Microsoft\WindowsApps\python.exe;C:\Users\charl\AppData\Local\Microsoft\WindowsApps;C:\Users\charl\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\charl\AppData\Local\Programs\Python\Python39\Scripts;D:\code\programs\7-Zip;C:\Users\charl\AppData\Local\Programs\Microsoft VS Code;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\Hostx64\x64;C:\Program Files\Sublime Text;C:\Users\charl\OneDrive\Attachments\Path;D:\code\coding\Python\crawler;C:\Users\charl\.fly\bin;C:\Program Files\PostgreSQL\13\bin;C:\Users\charl\AppData\Local\Microsoft\WindowsApps\;C:\Program Files\jq;C:\Users\charl\AppData\Local\nvs\;C:\Users\charl\AppData\Local\Programs\Microsoft VS Code;C:\Users\charl\AppData\Local\nvs\default;C:\Users\charl\AppData\Local\Programs
 
 Yarn version: 
-  1.22.11
+  1.22.15
 
 Node version: 
-  14.17.5
+  17.0.1
 
 Platform: 
-  linux x64
+  win32 x64
 
 Trace: 
-  SyntaxError: /home/runner/cpp/package.json: Unexpected string in JSON at position 747
-      at JSON.parse (<anonymous>)
-      at /nix/store/xb5x3axy5sj1scpv29hr35sz4wz26kyz-yarn-1.22.11/libexec/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/nix/store/xb5x3axy5sj1scpv29hr35sz4wz26kyz-yarn-1.22.11/libexec/yarn/lib/cli.js:310:30)
-      at /nix/store/xb5x3axy5sj1scpv29hr35sz4wz26kyz-yarn-1.22.11/libexec/yarn/lib/cli.js:321:13
+  Error: https://registry.yarnpkg.com/@types%2fneilsustc__markdown-it-katex: Not found
+      at Request.params.callback [as _callback] (C:\Users\charl\.yarn\releases\yarn-1.22.15.cjs:78559:18)
+      at Request.self.callback (C:\Users\charl\.yarn\releases\yarn-1.22.15.cjs:135290:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (C:\Users\charl\.yarn\releases\yarn-1.22.15.cjs:136262:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (C:\Users\charl\.yarn\releases\yarn-1.22.15.cjs:136184:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1340:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
 
 npm manifest: 
   {
-    "name": "cpp",
-    "version": "0.1.0",
-    "main": "index.js",
-    "license": "MIT",
-    "devDependencies": {
-      "@maginapp/vuepress-plugin-katex": "^1.0.11",
-      "@traptitech/markdown-it-katex": "^3.5.0",
-      "@vuepress/bundler-vite": "^2.0.0-beta.35",
-      "@vuepress/plugin-container": "^2.0.0-beta.35",
-      "@vuepress/plugin-git": "^2.0.0-beta.35",
-      "@vuepress/plugin-google-analytics": "^2.0.0-beta.35",
-      "@vuepress/plugin-search": "^2.0.0-beta.35",
-      "@vuepress/plugin-shiki": "^2.0.0-beta.35",
-      "@vuepress/plugin-toc": "^2.0.0-beta.35",
-      "cross-env": "^7.0.3",
-      "eslint": "8",
-      "eslint-config-berry": "^0.15.5",
-      "eslint-plugin-md": "^1.0.19",
-      "vuepress": "^2.0.0-beta.35"
-    },
-    "scripts": {
-  		"start": "yarn d"
-      "dev": "cross-env NODE_ENV=development vuepress dev docs",
-      "build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-      "lint:eslint": "npx eslint .",
-      "format:prettier": "npx prettier --write ."
-    },
-    "dependencies": {
-      "prettier": "^2.5.1"
-    }
+  	"name": "cpp",
+  	"version": "0.1.0",
+  	"main": "index.js",
+  	"license": "MIT",
+  	"devDependencies": {
+  		"@maginapp/vuepress-plugin-katex": "^1.0.11",
+  		"@traptitech/markdown-it-katex": "^3.5.0",
+  		"@vuepress/bundler-vite": "^2.0.0-beta.35",
+  		"@vuepress/plugin-container": "^2.0.0-beta.35",
+  		"@vuepress/plugin-git": "^2.0.0-beta.35",
+  		"@vuepress/plugin-google-analytics": "^2.0.0-beta.35",
+  		"@vuepress/plugin-search": "^2.0.0-beta.35",
+  		"@vuepress/plugin-shiki": "^2.0.0-beta.35",
+  		"@vuepress/plugin-toc": "^2.0.0-beta.35",
+  		"cross-env": "^7.0.3",
+  		"eslint": "8",
+  		"eslint-config-berry": "^0.15.5",
+  		"eslint-plugin-md": "^1.0.19",
+  		"vuepress": "^2.0.0-beta.35"
+  	},
+  	"scripts": {
+  		"start": "yarn dev",
+  		"dev": "cross-env NODE_ENV=development vuepress dev docs",
+  		"build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
+  		"lint:eslint": "npx eslint .",
+  		"format:prettier": "npx prettier --write ."
+  	},
+  	"dependencies": {
+  		"@neilsustc/markdown-it-katex": "^1.0.0",
+  		"katex": "^0.15.2",
+  		"prettier": "^2.5.1"
+  	}
   }
 
 yarn manifest: 
@@ -125,6 +132,13 @@ Lockfile:
     dependencies:
       katex "^0.11.1"
       markdown-it-texmath "^0.6.7"
+  
+  "@neilsustc/markdown-it-katex@^1.0.0":
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/@neilsustc/markdown-it-katex/-/markdown-it-katex-1.0.0.tgz#a7997b8382c455217a76c10feb5f89b0337acfa2"
+    integrity sha512-2u21S69739IGrNA/Q2xfcurox5LFXq2sp3CPeqx7yDNjy3/SC8taL6QAIYxupRuEUPNS5+OXq9DmwcdKjs90pg==
+    dependencies:
+      katex "*"
   
   "@nodelib/fs.scandir@2.1.5":
     version "2.1.5"
@@ -1960,19 +1974,19 @@ Lockfile:
     optionalDependencies:
       graceful-fs "^4.1.6"
   
+  katex@*, katex@^0.15.1, katex@^0.15.2:
+    version "0.15.2"
+    resolved "https://registry.yarnpkg.com/katex/-/katex-0.15.2.tgz#c05ece41ab497597b17abca2cecde3e4c0127f9d"
+    integrity sha512-FfZ/f6f8bQdLmJ3McXDNTkKenQkoXkItpW0I9bsG2wgb+8JAY5bwpXFtI8ZVrg5hc1wo1X/UIhdkVMpok46tEQ==
+    dependencies:
+      commander "^8.0.0"
+  
   katex@^0.11.1:
     version "0.11.1"
     resolved "https://registry.npmjs.org/katex/-/katex-0.11.1.tgz"
     integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
     dependencies:
       commander "^2.19.0"
-  
-  katex@^0.15.1:
-    version "0.15.2"
-    resolved "https://registry.yarnpkg.com/katex/-/katex-0.15.2.tgz#c05ece41ab497597b17abca2cecde3e4c0127f9d"
-    integrity sha512-FfZ/f6f8bQdLmJ3McXDNTkKenQkoXkItpW0I9bsG2wgb+8JAY5bwpXFtI8ZVrg5hc1wo1X/UIhdkVMpok46tEQ==
-    dependencies:
-      commander "^8.0.0"
   
   kind-of@^6.0.0, kind-of@^6.0.2:
     version "6.0.3"
