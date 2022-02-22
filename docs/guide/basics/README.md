@@ -5,20 +5,21 @@ title: The Basics
 
 # The basics of the basics of C++ (by Darryl)
 
-Apparently we're supposed to write experience or something but I just learnt `cpp` a week ago so here is what I know.
+Apparently we're supposed to write experience or something but
+I just learnt `cpp` a week ago so here is what I know.
 
 ## Data Types
 
 ### Basic Data Types
 
-| Data Type | Size (in bytes) | Use                                               | Example            |
-| --------- | --------------- | ------------------------------------------------- | ------------------ |
-| `int`     | 4               | Storing numbers (-2 147 483 648 to 2 147 483 647) | 12 442             |
-| `float`   | 4               | Storing decimal numbers (up to 7 d.p.)            | 5.63562            |
-| `double`  | 8               | Storing decimal numbers (up to 15 d.p.)           | 3.1415926535879732 |
-| `bool`    | 1               | Storing `true` or `false` values                  | `true`, `false`    |
-| `char`    | 1               | Storing a single character                        | `'D'`, `'$'`       |
-| `string`  | variable        | Storing multi-character text                      | `'hi mom'`         |
+| Data Type | Size (in bytes) | Stores                                    | Example            |
+| --------- | --------------- | ----------------------------------------- | ------------------ |
+| `int`     | 4               | Numbers (-2 147 483 648 to 2 147 483 647) | 12 442             |
+| `float`   | 4               | Decimal numbers (up to 7 d.p.)            | 5.63562            |
+| `double`  | 8               | Decimal numbers (up to 15 d.p.)           | 3.1415926535879732 |
+| `bool`    | 1               | `true` or `false` values                  | `true`, `false`    |
+| `char`    | 1               | A single character                        | `'D'`, `'$'`       |
+| `string`  | variable        | Multi-character text                      | `'hi mom'`         |
 
 ### Data Type Modifiers
 
@@ -31,16 +32,18 @@ Numeric data types (`int` and `double`) can be modified with:
 
 which give a variety of ranges of the same numerical datatype.
 
-| Modified Datatype                        | Size (in bytes) | Range                           |
-| ---------------------------------------- | --------------- | ------------------------------- |
-| `short int`                              | 2               | -32 768 to 32 767               |
-| `unsigned short int`                     | 2               | 0 to 65 535                     |
-| `unsigned int`                           | 4               | 0 to 4 294 967 295              |
-| `long int` (or just `long`)              | 4               | -2 147 483 648 to 2 147 483 647 |
-| `unsigned long int` (or `unsigned long`) | 4               | 0 to 4 294 967 295              |
-| `long long int` (or `long long`)         | 8               | $-(2^{63})$ to $2^{63} - 1$     |
-| `unsigned long long int`                 | 8               | 0 to 18 446 744 073 709 551 615 |
-| `long double`                            | 12              | -                               |
+Note that the default modified datatype is `int`.
+
+| Modified Datatype    | Size (in bytes) | Range                           |
+| -------------------- | --------------- | ------------------------------- |
+| `short`              | 2               | -32 768 to 32 767               |
+| `unsigned short`     | 2               | 0 to 65 535                     |
+| `unsigned`           | 4               | 0 to 4 294 967 295              |
+| `long`               | 4               | -2 147 483 648 to 2 147 483 647 |
+| `unsigned long`      | 4               | 0 to 4 294 967 295              |
+| `long long`          | 8               | $-(2^{63})$ to $2^{63} - 1$     |
+| `unsigned long long` | 8               | 0 to 18 446 744 073 709 551 615 |
+| `long double`        | 12              | -                               |
 
 ## Basic Programs
 
@@ -50,7 +53,7 @@ which give a variety of ranges of the same numerical datatype.
 #include <iostream>
 using namespace std;
 int main() {
-  cout<< "Hello World";
+  cout << "Hello World";
   return 0;
 }
 ```
