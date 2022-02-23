@@ -28,6 +28,7 @@ module.exports = {
 							'msup',
 							'mrow',
 							'annotation',
+							'mtext',
 							'semantics',
 							'math',
 						].includes(tag));
