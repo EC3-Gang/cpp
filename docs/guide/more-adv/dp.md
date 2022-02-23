@@ -1,5 +1,7 @@
 # Dynamic programming
 
+<Toc />
+
 ## Dynamic programming explained
 
 Dynamic programming is a technique used to the vast majority of competitive programming,
@@ -68,11 +70,11 @@ Regardless, both forms of DP help to speed up programs.
 
 
 
-### Common algorithms
+## Common DP algorithms
 
-## Prefix/suffix sum
+### Prefix/suffix sum
 
-### Introduction
+#### Introduction
 
 The objective of this form of dynamic programming is to be able to find the sum of all elements over a given range in an array. Usually, the naive code would run in O(N) time for each query for a range sum:
 
@@ -83,9 +85,9 @@ for (long long i = lb; i <= ub; i++) {
 }
 ```
 
-While this method may be fast to find the range sum for 1 query, if there are multiple queries, the algorithm would run in O(NQ) in the worst case, where Q is the number of queries. This can be sped up using the concept of precomputation.
+While this method may be fast to find the range sum for 1 query, if there are multiple queries, the algorithm would run in $\mathcal{O}(\mathcal{NQ})$ in the worst case, where $Q$ is the number of queries. This can be sped up using the concept of precomputation.
 
-### Precomputation
+#### Precomputation
 
 Precomputation is the act of making calculations prior to the actual query. While some of this calculations may not be used, having a set of numbers to refer to is much faster than just recalculating each time, sort of like memoisation. For the prefix sum problem, notice than the sum of a range is equivalent to the sum of all numbers leading up to the end, minus the sum of all numbers leading up to the front of the range. Hence, we can store the sums as so:
 
@@ -98,8 +100,8 @@ for (long long i = 0; i < n; i++) {
 long long sum = prefix[ub] - prefix[lb-1];
 ```
 
-While this method may seem too slow, it actually shortens down the time for each query to be O(1)! So, the time complexity of the program overall would be O(N + Q).
+While this method may seem too slow, it actually shortens down the time for each query to be $\mathcal{O}(1)$! So, the time complexity of the program overall would be $\mathcal{O}(\mathcal{N + Q})$.
 
-### Conclusion
+#### Conclusion
 
 Prefix sums is a good way of keeping track of range sums. While prefix sums are a good way of handling querys on range sums, it is unable to handle updates. In the chapter on trees, we will touch on this.

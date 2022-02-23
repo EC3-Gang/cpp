@@ -2,6 +2,7 @@ const { path } = require('@vuepress/utils');
 
 module.exports = {
 	theme: path.resolve(__dirname, './theme'),
+	sidebarDepth: 5,
 	base: process.env.BUILD_PATH,
 	head: [
 		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
@@ -37,8 +38,13 @@ module.exports = {
 			},
 		},
 	},
+	markdown: {
+		lineNumbers: true,
+		extractHeaders: {
+			level: [2, 3, 4, 5],
+		},
+	},
 	extendsMarkdown: (md) => {
-		// md.set({ breaks: true });
 		md.use(require('@commenthol/markdown-it-katex'));
 	},
 	plugins: [
