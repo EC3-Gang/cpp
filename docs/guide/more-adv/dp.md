@@ -65,3 +65,41 @@ The states are stored in $\text{memo}[n]$, the base cases are $\text{memo}[0]$ a
 The 2 forms of DP have their own advantages.
 While bottom-up DP is usually more intuitive, some questions require the use of top-down DP.
 Regardless, both forms of DP help to speed up programs.
+
+
+
+### Common algorithms
+
+## Prefix/suffix sum
+
+### Introduction
+
+The objective of this form of dynamic programming is to be able to find the sum of all elements over a given range in an array. Usually, the naive code would run in O(N) time for each query for a range sum:
+
+```cpp
+long long arr[n], sum = 0;
+for (long long i = lb; i <= ub; i++) {
+  sum += arr[i];
+}
+```
+
+While this method may be fast to find the range sum for 1 query, if there are multiple queries, the algorithm would run in O(NQ) in the worst case, where Q is the number of queries. This can be sped up using the concept of precomputation.
+
+### Precomputation
+
+Precomputation is the act of making calculations prior to the actual query. While some of this calculations may not be used, having a set of numbers to refer to is much faster than just recalculating each time, sort of like memoisation. For the prefix sum problem, notice than the sum of a range is equivalent to the sum of all numbers leading up to the end, minus the sum of all numbers leading up to the front of the range. Hence, we can store the sums as so:
+
+```cpp
+long long arr[n], prefix[n];
+for (long long i = 0; i < n; i++) {
+  if (!i) prefix[i] = arr[i];
+  else prefix[i] = arr[i] + prefix[i-1];
+}
+long long sum = prefix[ub] - prefix[lb-1];
+```
+
+While this method may seem too slow, it actually shortens down the time for each query to be O(1)! So, the time complexity of the program overall would be O(N + Q).
+
+### Conclusion
+
+Prefix sums is a good way of keeping track of range sums. While prefix sums are a good way of handling querys on range sums, it is unable to handle updates. In the chapter on trees, we will touch on this.
