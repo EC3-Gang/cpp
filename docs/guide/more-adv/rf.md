@@ -6,10 +6,10 @@ Pseudocode:
 
 ```js
 function fn(a, b) {
-	if (a <= b) {
-		console.log(a);
-		return fn(a + 1, b);
-	}
+  if (a <= b) {
+    console.log(a);
+    return fn(a + 1, b);
+  }
 }
 fn(1, 10);
 ```
