@@ -28,6 +28,7 @@ module.exports = {
 							'msup',
 							'mrow',
 							'annotation',
+							'mtext',
 							'semantics',
 							'math',
 						].includes(tag));
@@ -54,7 +55,7 @@ module.exports = {
 		[
 			'@vuepress/plugin-shiki',
 			{
-				theme: 'solarized-dark',
+				theme: 'one-dark-pro',
 			},
 		],
 		[
@@ -101,6 +102,7 @@ module.exports = {
 					children: [
 						'/guide/more-adv/README.md',
 						'/guide/more-adv/dp.md',
+						'/guide/more-adv/structsnclasses.md',
 						'/guide/more-adv/trees.md',
 						'/guide/more-adv/gt.md',
 						'/guide/more-adv/rf.md',
