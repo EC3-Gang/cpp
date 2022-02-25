@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		:root {
+			--c-bg: #fff;
+		}
+
+		html.dark {
+			--c-bg: #1d1d1d;
+		}
+
+		html, body {
+			background-color: var(--c-bg);
+		}
+	</style>
+	<script>
+	(function() {
+		if (window.location.href.startsWith('http://localhost:')) return;
+		if (location.protocol !== 'https:') {
+			location.replace(`https:${location.href.substring(location.protocol.length)}`);
+		}
+	}());
+	// location.reload();
+
+	</script>
+	<script lang="javascript">
+	setTimeout(function(){
+		let elementsArray = document.querySelectorAll("a");
+
+		elementsArray.forEach(function(elem) {
+			elem.addEventListener("click", function() {
+					setTimeout(() => {
+				var content = document.getElementsByClassName("theme-default-content")[0];
+					console.log(content);
+					var el = content.getElementsByTagName("P");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("DIV");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("H1");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("UL");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("OL");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("H2");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+				AOS.init({
+					duration: 1000
+				})
+			}, 2200)
+			});
+		});
+	}, 1500);
+	</script>
+	<script type="text/javascript">
+
+		setInterval(function() {
+			var curURL = window.location.origin + '/';
+			if (curURL != document.URL) return;
+			setTimeout(function() {
+				console.log('Working...');
+
+				let elementsArray = document.querySelectorAll("a");
+				elementsArray.forEach(function(elem) {
+					elem.addEventListener("click", function() {
+							setTimeout(() => {
+						var content = document.getElementsByClassName("theme-default-content")[0];
+							console.log(content);
+							var el = content.getElementsByTagName("P");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("DIV");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H1");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("UL");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("OL");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H2");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H3");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H4");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+						AOS.init({
+							duration: 1000
+						})
+					}, 2200)
+					});
+
+				});
+			}, 1500)
+
+		}, 1500)
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+</head>
+<body>
+	<div id="app"></div>
+</body>
+</html>
