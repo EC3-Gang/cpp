@@ -1,1 +1,0 @@
-import{o as s,c as e,a as t,e as a}from"./app.6f43b709.js";import{_ as c}from"./plugin-vue_export-helper.21dcd24c.js";const o={},r={id:"stucts-and-classes",tabindex:"-1"},n=t("a",{class:"header-anchor",href:"#stucts-and-classes","aria-hidden":"true"},"#",-1),_=a(" Stucts and Classes"),d=[n,_];function i(h,l){return s(),e("h1",r,d)}var m=c(o,[["render",i]]);export{m as default};
