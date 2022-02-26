@@ -96,7 +96,7 @@ module.exports = {
 			'/': [
 				{
 					text: 'Introduction',
-					children: ['/', '/general.md'],
+					children: ['/intro.md', '/general.md'],
 				},
 				{
 					text: 'Basics & STL Data Structures',
