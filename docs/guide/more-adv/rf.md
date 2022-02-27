@@ -4,13 +4,12 @@ Recursive functions are when the function is called from within the same functio
 
 Pseudocode:
 
-```js
-function fn(a, b) {
-  if (a <= b) {
-    console.log(a);
-    return fn(a + 1, b);
-  }
-}
+```
+function fn with variable A & B
+  if A smaller or equals to B
+    print a
+    recall function fn with variable A+1 and B
+
 fn(1, 10);
 ```
 
