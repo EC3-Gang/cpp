@@ -7,6 +7,27 @@ title: The Basics
 
 Ok, so essentially, these are the things you must take note of when starting out with `C++`. I will first cover the data types.
 
+## The Structure of a C++ Program
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+  cout << "Hello World";
+}
+```
+
+This is a basic C++ program which prints "Hello World" to the console.
+
+It is made up of three essential parts:
+
+1. `#include`: It includes the necessary header files for functions used in the program.
+2. `using namespace std`: Includes that standard library of functions.
+3. `int main() {}`: The main function, where all your code should go.
+
+Notice that we use `cout` for printing. The opposite of that, `cin >> variable`,
+is for receiving input to a variable, however that variable must be defined prior to the statement.
+
 ## Data Types
 
 ### Basic Data Types
@@ -44,23 +65,88 @@ Note that the default modified datatype is `int`.
 | `unsigned long long` | $8$             | $0$ to $18 446 744 073 709 551 615$ |
 | `long double`        | $12$            | -                                   |
 
-## Basic Programs
+## Control Flow
 
-### Hello World
+### If Statements
+
+For leaving decisions to your computer.
 
 ```cpp
 #include <iostream>
 using namespace std;
 int main() {
-  cout << "Hello World";
-  return 0;
+  int a;
+  cout << "enter your age: ";
+  cin >> a;
+
+  if (a < 18) { cout << "access denied"; }
+  else { cout << "have a drink!"; }
 }
 ```
 
-This program will print the text "Hello World".
+Notice that the conditions are surrounded by **parentheses**
+and the following code to be executed is in curly braces.
 
-1. `#include` will include certain header files into a program. This will allow us to use whatever is in, in this case, `iostream`.
-2. `using namespace std` allows us to use the standard library, which comes in a namespace. Of course, you can forgo this and use `std::` when you want to use it. However, it is better to define the namespace.
-3. `int main() {}` creates a function. The name of this function is `main`. The code is written in `{}`.
-4. `cout` prints, or writes, a certain text to the standard output.
-5. In C++, you must end all statements with `;`.
+If you know how programming works, you can also use `else if` for multiple conditions.
+
+#### Logical Operators
+
+| Op.    | Means | True Example                 | False Example                |
+| ------ | ----- | ---------------------------- | ---------------------------- |
+| `&&`   | "and" | `(5 > 3 && 2 < 4)`           | `(3 > 5 && 2 < 4)`           |
+| `\|\|` | "or"  | `('s' == 's' or 't' == 'u')` | `('s' == 't' or 't' == 'u')` |
+| `!`    | "not" | `(!(5 < 3))`                 | `(!('a' == 'a'))`            |
+
+#### Comparison Operators
+
+| Op.  | Means                       | True Example |
+| ---- | --------------------------- | ------------ |
+| `==` | is equal to                 | `(5 == 5)`   |
+| `!=` | is not equal to             | `(5 != 3)`   |
+| `>`  | is greater than             | `(5 > 3)`    |
+| `>=` | is greater than or equal to | `(5 >= 5)`   |
+| `<`  | is smaller than             | `(3 < 5)`    |
+| `<=` | is smaller than or equal to | `(5 <= 5)`   |
+
+### Loops
+
+#### For Loop
+
+That's it.
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+  //  initialize, cond., inc./dec.
+  for (int i = 1; i <= 5; i++) { cout << i << ' '; }
+  for (int i = 4; i > 0; i--) { cout << i << ' '; }
+}
+```
+
+#### While Loop
+
+That's also it.
+
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+  int i = 10;
+  while (i > 0) { // put condition in parens.
+    cout << i << ' ';
+    i--;
+  }
+}
+```
+
+## Functions
+
+```cpp
+int add(int a, int b, int c) {
+  return a + b + c;
+}
+```
+
+The return type of the function is always specified,
+followed by its parameters (with their specific types).
