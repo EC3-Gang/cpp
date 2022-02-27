@@ -1,1 +1,1 @@
-# GT
+# Graph Theory

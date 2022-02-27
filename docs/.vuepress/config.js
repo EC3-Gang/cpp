@@ -2,7 +2,10 @@ const { path } = require('@vuepress/utils');
 
 module.exports = {
 	theme: path.resolve(__dirname, './theme'),
+	sidebarDepth: 5,
 	base: process.env.BUILD_PATH,
+	templateDev: path.join(__dirname, 'template', 'index.html'),
+	templateSSR: path.join(__dirname, 'template', 'index.html'),
 	head: [
 		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
 		[
@@ -28,6 +31,7 @@ module.exports = {
 							'msup',
 							'mrow',
 							'annotation',
+							'mtext',
 							'semantics',
 							'math',
 						].includes(tag));
@@ -36,8 +40,13 @@ module.exports = {
 			},
 		},
 	},
+	markdown: {
+		lineNumbers: true,
+		extractHeaders: {
+			level: [2, 3, 4, 5],
+		},
+	},
 	extendsMarkdown: (md) => {
-		// md.set({ breaks: true });
 		md.use(require('@commenthol/markdown-it-katex'));
 	},
 	plugins: [
@@ -54,7 +63,7 @@ module.exports = {
 		[
 			'@vuepress/plugin-shiki',
 			{
-				theme: 'solarized-dark',
+				theme: 'one-dark-pro',
 			},
 		],
 		[
@@ -87,7 +96,7 @@ module.exports = {
 			'/': [
 				{
 					text: 'Introduction',
-					children: ['/', '/general.md'],
+					children: ['/intro.md', '/general.md'],
 				},
 				{
 					text: 'Basics & STL Data Structures',
@@ -101,6 +110,7 @@ module.exports = {
 					children: [
 						'/guide/more-adv/README.md',
 						'/guide/more-adv/dp.md',
+						'/guide/more-adv/structsnclasses.md',
 						'/guide/more-adv/trees.md',
 						'/guide/more-adv/gt.md',
 						'/guide/more-adv/rf.md',

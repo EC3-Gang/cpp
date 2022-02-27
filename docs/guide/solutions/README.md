@@ -12,4 +12,17 @@ int main() {
 }
 ```
 
+## addition
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+  long long int a, b;
+  cin >> a >> b;
+  cout << a + b << endl;
+}
+```
+
 Nothing else for now :D
