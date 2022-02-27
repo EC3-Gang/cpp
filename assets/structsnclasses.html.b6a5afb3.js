@@ -1,0 +1,1 @@
+const e={key:"v-54999f4b",path:"/guide/more-adv/structsnclasses.html",title:"Stucts and Classes",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1645932076e3,contributors:[{name:"Darryl-Shi",email:"97209091+Darryl-Shi@users.noreply.github.com",commits:1}]},filePathRelative:"guide/more-adv/structsnclasses.md"};export{e as data};

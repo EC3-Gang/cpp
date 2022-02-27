@@ -1,0 +1,1 @@
+const e={key:"v-008f5444",path:"/guide/LICENSE.html",title:"LICENSE",lang:"en-US",frontmatter:{title:"LICENSE"},excerpt:"",headers:[],git:{updatedTime:1645932076e3,contributors:[{name:"Darryl-Shi",email:"97209091+Darryl-Shi@users.noreply.github.com",commits:1}]},filePathRelative:"guide/LICENSE.md"};export{e as data};

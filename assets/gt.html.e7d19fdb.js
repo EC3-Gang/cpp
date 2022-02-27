@@ -1,1 +1,0 @@
-const e={key:"v-1da06924",path:"/guide/more-adv/gt.html",title:"Graph Theory",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1645931635e3,contributors:[{name:"Darryl-Shi",email:"97209091+Darryl-Shi@users.noreply.github.com",commits:1}]},filePathRelative:"guide/more-adv/gt.md"};export{e as data};
