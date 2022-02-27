@@ -23,8 +23,7 @@ _Image from GeeksforGeeks_
 
 There's... actually a built-in function defined in header `<algorithm>` (`std::binary_search`).
 There's really no need to write your own.
-You can read more about it
-[here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
+You can read more about it [here](https://en.cppreference.com/w/cpp/algorithm/binary_search).
 
 Ok. I get it. You just feel restless and geeky and want to
 write your own Binary Search function.
