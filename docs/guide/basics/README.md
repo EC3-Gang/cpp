@@ -6,7 +6,7 @@ title: The Basics
 # The basics of the basics of C++ (by Darryl)
 
 Apparently we're supposed to write experience or something but
-I just learnt `cpp` a week ago so here is what I know.
+I just learnt `C++` a week ago so here is what I know.
 
 ## Data Types
 
