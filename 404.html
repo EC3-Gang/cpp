@@ -1,33 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="generator" content="VuePress 2.0.0-beta.35">
-    <style>
-      :root {
-        --c-bg: #fff;
-      }
-      html.dark {
-        --c-bg: #22272e;
-      }
-      html, body {
-        background-color: var(--c-bg);
-      }
-    </style>
-    <script>
-      const userMode = localStorage.getItem('vuepress-color-scheme');
-			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
-				document.documentElement.classList.toggle('dark', true);
-			}
-    </script>
-    <link rel="icon" href="https://i.imgur.com/gh25FnY_d.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css"><title></title><meta name="description" content="">
-    <link rel="modulepreload" href="/assets/app.1ec00bab.js"><link rel="modulepreload" href="/assets/404.html.f166316b.js"><link rel="modulepreload" href="/assets/404.html.bee13de6.js"><link rel="modulepreload" href="/assets/plugin-vue_export-helper.21dcd24c.js">
-    <link rel="stylesheet" href="/assets/style.cf8ce2cc.css">
-  </head>
-  <body>
-    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>There&#39;s nothing here.</blockquote><a href="/" class="">Take me home</a></div></div><!----><!--]--></div>
-    <script type="module" src="/assets/app.1ec00bab.js" defer></script>
-  </body>
+<html lang="en">
+<head>
+	<style>
+		:root {
+			--c-bg: #fff;
+		}
+
+		html.dark {
+			--c-bg: #1d1d1d;
+		}
+
+		html, body {
+			background-color: var(--c-bg);
+		}
+	</style>
+	<script>
+	(function() {
+		if (window.location.href.startsWith('http://localhost:')) return;
+		if (location.protocol !== 'https:') {
+			location.replace(`https:${location.href.substring(location.protocol.length)}`);
+		}
+	}());
+	// location.reload();
+
+	</script>
+	<script lang="javascript">
+	setTimeout(function(){
+		let elementsArray = document.querySelectorAll("a");
+
+		elementsArray.forEach(function(elem) {
+			elem.addEventListener("click", function() {
+					setTimeout(() => {
+				var content = document.getElementsByClassName("theme-default-content")[0];
+					console.log(content);
+					var el = content.getElementsByTagName("P");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("DIV");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("H1");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("UL");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("OL");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+					var el = content.getElementsByTagName("H2");
+					for (var i = 0; i < el.length; i++) {
+						el[i].setAttribute("data-aos", "fade-up")
+					}
+				AOS.init({
+					duration: 1000
+				})
+			}, 2200)
+			});
+		});
+	}, 1500);
+	</script>
+	<script type="text/javascript">
+
+		setInterval(function() {
+			var curURL = window.location.origin + '/';
+			if (curURL != document.URL) return;
+			setTimeout(function() {
+				console.log('Working...');
+
+				let elementsArray = document.querySelectorAll("a");
+				elementsArray.forEach(function(elem) {
+					elem.addEventListener("click", function() {
+							setTimeout(() => {
+						var content = document.getElementsByClassName("theme-default-content")[0];
+							console.log(content);
+							var el = content.getElementsByTagName("P");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("DIV");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H1");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("UL");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("OL");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H2");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H3");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+							var el = content.getElementsByTagName("H4");
+							for (var i = 0; i < el.length; i++) {
+								el[i].setAttribute("data-aos", "fade-up")
+							}
+						AOS.init({
+							duration: 1000
+						})
+					}, 2200)
+					});
+
+				});
+			}, 1500)
+
+		}, 1500)
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+</head>
+<body>
+	<div id="app"></div>
+</body>
 </html>
