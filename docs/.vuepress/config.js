@@ -61,7 +61,7 @@ module.exports = {
 		[
 			'@vuepress/plugin-shiki',
 			{
-				theme: 'one-dark-pro',
+				theme: 'solarized-dark',
 			},
 		],
 		[
