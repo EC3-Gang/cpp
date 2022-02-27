@@ -8,7 +8,7 @@ Pseudocode:
 function fn with variable A & B
   if A smaller or equals to B
     print a
-    recall function fn with cariable A+1 and B
+    recall function fn with variable A+1 and B
 
 fn(1, 10);
 ```
