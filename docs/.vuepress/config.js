@@ -13,6 +13,20 @@ module.exports = {
 				href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.2/katex.min.css',
 			},
 		],
+		[
+			'link',
+			{
+				rel: 'stylesheet',
+				href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap',
+			},
+		],
+		[
+			'link',
+			{
+				rel: 'stylesheet',
+				href: 'https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+			},
+		],
 	],
 	// when using vuepress-vite package, you can omit this field
 	// because vite is the default bundler
@@ -61,7 +75,7 @@ module.exports = {
 		[
 			'@vuepress/plugin-shiki',
 			{
-				theme: 'one-dark-pro',
+				theme: 'solarized-dark',
 			},
 		],
 		[
