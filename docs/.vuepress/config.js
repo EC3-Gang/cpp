@@ -5,7 +5,7 @@ module.exports = {
 	sidebarDepth: 5,
 	base: process.env.BUILD_PATH,
 	templateDev: path.join(__dirname, 'template', 'index.html'),
-	templateSSR: path.join(__dirname, 'template', 'index.html'),
+	templateBuild: path.join(__dirname, 'template', 'index.html'),
 	head: [
 		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
 		[
