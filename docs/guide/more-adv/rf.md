@@ -49,7 +49,7 @@ ll sum(ll n) {
 int main() {
   ll n;
   cin >> n;
-  for (int i = 0; i < n + 1; i++) cout << sum(i) << endl;
+  for (int i = 0; i < n + 1; i++) cout << sum(i) << '\n';
 }
 ```
 
