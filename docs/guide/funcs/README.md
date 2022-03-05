@@ -1,3 +1,3 @@
-# Useful functions
+# Useful Functions
 
-Commonly used functions like binary searches will be covered in this section.
+Commonly used functions in competitive programming will be covered in this section.

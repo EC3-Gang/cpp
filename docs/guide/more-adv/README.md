@@ -1,5 +1,5 @@
-# More advanced structures and topics
+# Advanced Topics
 
-More complex and advanced topics like dynamic programming
-and recursive functions (not really useful but who cares)
-will be covered in these few sections by Derrick (god of CP).
+More advanced topics like dynamic programming
+and recursive functions will be covered
+in the next few sections.

@@ -1,3 +1,8 @@
+---
+lang: en-us
+title: Binary Search
+---
+
 # Binary Search
 
 ## Binary Search Explained

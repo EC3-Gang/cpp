@@ -1,6 +1,7 @@
-# Recursive functions
+# Recursive Functions
 
-Recursive functions are when the function is called from within the same function.
+Recursive functions are functions which are called within the same function.
+Crazy, right?
 
 Pseudocode:
 
