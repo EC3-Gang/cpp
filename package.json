@@ -24,8 +24,8 @@
 		"start": "yarn dev",
 		"dev": "cross-env NODE_ENV=development vuepress dev docs",
 		"build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-		"lint": "npx eslint .",
-		"format": "npx prettier --write ."
+		"lint:eslint": "eslint .",
+		"format:prettier": "prettier --write ."
 	},
 	"dependencies": {
 		"@neilsustc/markdown-it-katex": "^1.0.0",
