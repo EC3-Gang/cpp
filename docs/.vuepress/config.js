@@ -36,7 +36,7 @@ module.exports = {
 			template: {
 				compilerOptions: {
 					isCustomElement: (tag) => {
-						return ([
+						return [
 							'mi',
 							'mo',
 							'mn',
@@ -46,7 +46,7 @@ module.exports = {
 							'mtext',
 							'semantics',
 							'math',
-						].includes(tag));
+						].includes(tag);
 					},
 				},
 			},
@@ -82,8 +82,8 @@ module.exports = {
 			'@vuepress/plugin-google-analytics',
 			process.env.NODE_ENV === 'production'
 				? {
-					id: 'G-TYT36D3YZN',
-				}
+						id: 'G-TYT36D3YZN',
+				  }
 				: false,
 		],
 		[
