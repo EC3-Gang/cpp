@@ -1,1 +1,1 @@
-# Stucts and Classes
+# Structs and Classes

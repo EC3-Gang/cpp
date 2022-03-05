@@ -111,7 +111,7 @@ module.exports = {
 					children: ['/intro.md', '/general.md'],
 				},
 				{
-					text: 'Basics & STL Data Structures',
+					text: 'The Basics',
 					children: [
 						'/guide/basics/README.md',
 						'/guide/stl-data-structures/README.md',
