@@ -1,6 +1,7 @@
 ---
 title: Introduction
 ---
+
 ## CPP Guide for Competitive Programming (HCI EC³)
 
 This a guide made by a few EC³ members in Lower Secondary. Have fun reading and getting confused!
@@ -31,16 +32,14 @@ Not sure what the abbreviations mean? Here you go:
 | RTE(11) | Runtime Error (11)    | Your program accessed areas in memory which were out of range.   |
 
 For those interested in USACO:
-| Abbr.   | Meaning                               |
-| ------- | --------------------------------------|
-| *       | Correct answer                        |
-| X       | Wrong answer                          |
-| !       | Runtime error or memory limit exceeded|
-| E       | Empty output file                     |  
-| M       | Missing output file                   |  
-| T       | Time limit exceeded                   |  
-
-
+| Abbr. | Meaning                                |
+| ----- | -------------------------------------- |
+| \*    | Correct answer                         |
+| X     | Wrong answer                           |
+| !     | Runtime error or memory limit exceeded |
+| E     | Empty output file                      |
+| M     | Missing output file                    |
+| T     | Time limit exceeded                    |
 
 ### Hello, World
 

@@ -36,7 +36,7 @@ module.exports = {
 			template: {
 				compilerOptions: {
 					isCustomElement: (tag) => {
-						return ([
+						return [
 							'mi',
 							'mo',
 							'mn',
@@ -46,7 +46,7 @@ module.exports = {
 							'mtext',
 							'semantics',
 							'math',
-						].includes(tag));
+						].includes(tag);
 					},
 				},
 			},

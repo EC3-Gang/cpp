@@ -66,6 +66,7 @@ This uses recursive functions, so you might want to go take a look at [this](/gu
 
 Recursion is basically running a code again and again until you get the desired results.
 For example:
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -83,7 +84,9 @@ int main()
 	cout<<recur(n,peaches);
 }
 ```
+
 This is a recursive binary search algorithm
+
 ```cpp
 int binarySearch(int array[], int x, int low, int high) {
   if (high >= low) {
