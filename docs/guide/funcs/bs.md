@@ -64,6 +64,26 @@ int binarySearch(int array[], int x, int low, int high) {
 
 This uses recursive functions, so you might want to go take a look at [this](/guide/more-adv/rf.md).
 
+Recursion is basically running a code again and again until you get the desired results.
+For example:
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int recur(int n,int peaches)
+{
+	if(n==0) return peaches;
+	peaches=(peaches+1)*2;
+	return recur(n-1,peaches);
+}
+int main()
+{
+	int peaches=1;
+	int n;
+	cin>>n;
+	cout<<recur(n,peaches);
+}
+```
+This is a recursive binary search algorithm
 ```cpp
 int binarySearch(int array[], int x, int low, int high) {
   if (high >= low) {
