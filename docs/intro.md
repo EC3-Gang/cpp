@@ -30,6 +30,18 @@ Not sure what the abbreviations mean? Here you go:
 | RTE(6)  | Runtime Error (6)     | Your program has overflowed in terms of memory capacity.         |
 | RTE(11) | Runtime Error (11)    | Your program accessed areas in memory which were out of range.   |
 
+For those interested in USACO:
+| Abbr.   | Meaning                               |
+| ------- | --------------------------------------|
+| *       | Correct answer                        |
+| X       | Wrong answer                          |
+| !       | Runtime error or memory limit exceeded|
+| E       | Empty output file                     |  
+| M       | Missing output file                   |  
+| T       | Time limit exceeded                   |  
+
+
+
 ### Hello, World
 
 A very simple program allowing you to AC [this CP problem](https://codebreaker.xyz/problem/helloworld)
