@@ -78,6 +78,7 @@ module.exports = {
 				theme: 'solarized-dark',
 			},
 		],
+		// prettier-ignore
 		[
 			'@vuepress/plugin-google-analytics',
 			process.env.NODE_ENV === 'production'
