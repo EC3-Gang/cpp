@@ -140,13 +140,47 @@ int main() {
 }
 ```
 
-## Functions
-
+## Functions (or subroutines, as I like to call it)
+There are different types of functions
+1. The int function
+This function returns a int
 ```cpp
 int add(int a, int b, int c) {
   return a + b + c;
 }
 ```
-
+2. The void function
+This functions returns nothing lmao
+```cpp
+void add(int a, int b, int c) {
+  cout<<a+b+c;
+}
+```
+3. The string function
+This returns a string
+```cpp
+string add(string a, string b, string c) {
+  return a + b + c;
+}
+```
+4. The boolean function
+This function returns a boolean (true or false)
+You can do this:
+```cpp
+bool add(int a, int b, int c) {
+  if(a+b>c)
+  {
+    return true;
+  }
+  return false;
+}
+```
+Or this:
+```cpp
+int add(int a, int b, int c) {
+  return (a+b>c);
+}
+```
+Notice how in the first code, there is no "else" function to help return false. This is because after returning the desired value, it will stop the function.
 The return type of the function is always specified,
 followed by its parameters (with their specific types).
