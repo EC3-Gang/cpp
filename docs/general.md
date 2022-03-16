@@ -9,6 +9,15 @@ title: General Tips
 Before I start, I thought that you should know that there are a few things that you should avoid at all costs when doing Competitve Programming.
 
 1. Using Github Copilot or any other AI autocomplete assistants. You will be screamed at by certain contributors if you do.
+
+2. Do NOT share your code during a contest with other contestants during the duration of the contest, this could lead to disqualification for LIFE.
+
+3. Beware of using things like "endl" or "ends" during C++ contests as some CP websites do not allow that.
+
+4. Instead of using "or", substitute it with "||" as "or" might not work and it will minimise troublesome situations
+
+5. You are allowed to refer to algorithm codes that you already wrote beforehand but definitely NOT from other people/websites
+
    :::
 
 ### Fast Input/Output
