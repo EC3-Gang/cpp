@@ -37,6 +37,21 @@ int main() {
   cout << arr.size(); // size of the array
 }
 ```
+Here is the basic code to input an array:
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int n;
+  cin>>n;
+  int x[n];
+  for(int i=0;i<n;++i){
+    cin>>x[i];
+  }
+}
+```
+For Python users, the main difference you will notice is that in C++, you can input everything in one line, which makes it much less troublesome than Python, which you will have to use a special function to input all the elements in an array in one line.
 
 ### Vectors
 
