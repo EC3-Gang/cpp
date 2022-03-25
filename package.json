@@ -22,9 +22,9 @@
 	},
 	"scripts": {
 		"start": "yarn dev",
-		"dev": "cross-env NODE_ENV=development vuepress dev docs",
-		"build": "cross-env NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-		"lint:eslint": "eslint .",
+		"dev": "NODE_ENV=development vuepress dev docs",
+		"build": "NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
+		"lint": "eslint .",
 		"format:prettier": "prettier --write ."
 	},
 	"dependencies": {

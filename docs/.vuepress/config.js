@@ -135,6 +135,7 @@ module.exports = {
 						'/guide/funcs/README.md',
 						'/guide/funcs/bs.md',
 						'/guide/funcs/bubblesort.md',
+						'/guide/funcs/greedyalgorithms.md',
 					],
 				},
 				{
