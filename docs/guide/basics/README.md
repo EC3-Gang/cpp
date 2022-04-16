@@ -3,7 +3,7 @@ lang: en-us
 title: The Basics
 ---
 
-# The basics of the basics of C++ (by Darryl)
+# The basics of the basics of C++
 
 Ok, so essentially, these are the things you must take note of when starting out with `C++`. I will first cover the data types.
 
