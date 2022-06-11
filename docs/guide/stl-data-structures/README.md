@@ -240,7 +240,7 @@ int main() {
   cout << "this set weighs " << s.size() << " kg\n";
 
   // prints all the elements in the set
-  for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+  for (itr = s.begin(); itr != s.end(); itr++) cout << *itr << " ";
 
   s.erase(s.begin(), s.find(55)); // remove 55
 
