@@ -118,3 +118,9 @@ complexity of the program overall would be $\mathcal{O}(N + Q)$.
 Prefix sums is a good way of keeping track of range sums.
 While prefix sums are a good way of handling querys on range sums,
 it is unable to handle updates. In the chapter on trees, we will touch on this.
+
+### Kadane's algorithm 
+
+#### Introduction
+
+Kadane's Algorithm is used to find the maximum sum across all subarrays of an array,
