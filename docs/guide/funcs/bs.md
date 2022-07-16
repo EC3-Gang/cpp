@@ -75,18 +75,18 @@ For example:
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-int recur(int n,int peaches)
+int meg(int n,int peaches)
 {
 	if(n==0) return peaches;
 	peaches=(peaches+1)*2;
-	return recur(n-1,peaches);
+	return meg(n-1,peaches);
 }
 int main()
 {
 	int peaches=1;
 	int n;
 	cin>>n;
-	cout<<recur(n,peaches);
+	cout<<meg(n,peaches);
 }
 ```
 

@@ -4,6 +4,12 @@ tbody {
 	width: 100%;
 }
 
+pre {
+	-moz-tab-size: 2; /* Firefox */
+	-o-tab-size: 2; /* Opera */
+	tab-size: 2; /* Others */	
+} 
+
 :root {
 	// brand colors
 	--c-brand: #6c71c4;
