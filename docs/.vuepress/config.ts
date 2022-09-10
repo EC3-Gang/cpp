@@ -1,7 +1,7 @@
-const { path } = require('@vuepress/utils');
+import { path } from '@vuepress/utils';
 
-module.exports = {
-	theme: path.resolve(__dirname, './theme'),
+export default {
+	port: 3000,
 	sidebarDepth: 5,
 	base: process.env.BUILD_PATH,
 	head: [
@@ -35,7 +35,7 @@ module.exports = {
 		vuePluginOptions: {
 			template: {
 				compilerOptions: {
-					isCustomElement: (tag) => {
+					isCustomElement: (tag: string) => {
 						return [
 							'mi',
 							'mo',
@@ -58,7 +58,7 @@ module.exports = {
 			level: [2, 3, 4, 5],
 		},
 	},
-	extendsMarkdown: (md) => {
+	extendsMarkdown: (md: { use: (arg: any) => void; }) => {
 		md.use(require('@commenthol/markdown-it-katex'));
 	},
 	plugins: [
@@ -140,7 +140,11 @@ module.exports = {
 				},
 				{
 					text: 'Others',
-					children: ['/guide/solutions/', '/guide/LICENSE.md'],
+					children: [
+						'/guide/others/solutions.md',
+						'/guide/others/macros.md',
+						'/guide/others/LICENSE.md',
+					],
 				},
 			],
 		},
