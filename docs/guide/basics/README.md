@@ -112,7 +112,15 @@ If you know how programming works, you can also use `else if` for multiple condi
 
 #### For Loop
 
-That's it.
+This is a bit complicated. There are 3 perimeters in a for loop: initialization, loop condition, and increment.
+
+1. Initialization: initialize whatever variables you want to use
+
+2. Loop condition: loop as long as this is true
+
+3. Increment: change variables that you initalized in step 1
+
+Note: any of these parts can be ommited
 
 ```cpp
 #include <iostream>
@@ -126,7 +134,7 @@ int main() {
 
 #### While Loop
 
-That's also it.
+As long as (condition) is true, run the loop.
 
 ```cpp
 #include <iostream>
