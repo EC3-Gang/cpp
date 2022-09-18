@@ -25,7 +25,7 @@
 		"start": "yarn dev",
 		"dev": "NODE_ENV=development vuepress dev docs",
 		"build": "NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-		"lint": "eslint .",
+		"lint": "eslint . --ext=.ts,.tsx,.js,.jsx",
 		"format:prettier": "prettier --write ."
 	},
 	"dependencies": {
