@@ -127,6 +127,7 @@ export default {
 						'/guide/more-adv/trees.md',
 						'/guide/more-adv/gt.md',
 						'/guide/more-adv/rf.md',
+						'/guide/mode-adv/datastructures.md',
 					],
 				},
 				{
