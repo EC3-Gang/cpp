@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: STL Data Structures
+title: Sructs and Classes
 ---
 
 # Structs and Classes

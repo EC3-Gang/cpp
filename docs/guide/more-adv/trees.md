@@ -1,6 +1,6 @@
 ---
 lang: en-us
-title: Greedy Algorithms
+title: Data Structures
 ---
 
 # Data Strutures

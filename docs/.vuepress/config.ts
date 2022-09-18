@@ -123,11 +123,10 @@ export default {
 					children: [
 						'/guide/more-adv/README.md',
 						'/guide/more-adv/dp.md',
-						'/guide/more-adv/structsnclasses.md',
-						'/guide/more-adv/trees.md',
+						'/guide/more-adv/classes.md',
 						'/guide/more-adv/gt.md',
 						'/guide/more-adv/rf.md',
-						'/guide/mode-adv/datastructures.md',
+						'/guide/more-adv/trees.md',
 					],
 				},
 				{
@@ -137,7 +136,6 @@ export default {
 						'/guide/funcs/bs.md',
 						'/guide/funcs/bubblesort.md',
 						'/guide/funcs/greedyalgorithms.md',
-						'/guide/funcs/2pointers.md',
 						'/guide/funcs/linesweep.md',
 					],
 				},
