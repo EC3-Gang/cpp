@@ -4,6 +4,15 @@ tbody {
 	width: 100%;
 }
 
+@font-face {
+	font-family: 'Cascadia Code';
+	src: url('./CascadiaCode.woff2') format('woff2');
+}
+
+pre, code {
+	font-family: 'Cascadia Code', monospace !important;
+}
+
 pre {
 	-moz-tab-size: 2; /* Firefox */
 	-o-tab-size: 2; /* Opera */
@@ -70,7 +79,7 @@ pre {
 
 	// font vars
 	--font-family: 'Source Sans Pro', sans-serif;
-	--font-family-code: 'Source Code Pro', monospace;
+	--font-family-code: 'Cascadia Code', monospace;
 
 	// layout vars
 	--navbar-height: 3.6rem;
@@ -190,8 +199,4 @@ tbody {
 
 body, html {
 	font-family: 'Source Sans Pro', sans-serif !important;
-}
-
-pre, code {
-	font-family: 'Source Code Pro', monospace !important;
 }
