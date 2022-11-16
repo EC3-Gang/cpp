@@ -136,6 +136,8 @@ export default {
 						'/guide/funcs/bubblesort.md',
 						'/guide/funcs/greedyalgorithms.md',
 						'/guide/funcs/linesweep.md',
+						'/guide/funcs/mitm.md',
+						'/guide/funcs/bitmask.md',
 					],
 				},
 				{
