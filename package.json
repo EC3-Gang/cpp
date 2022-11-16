@@ -29,6 +29,7 @@
 		"format:prettier": "prettier --write ."
 	},
 	"dependencies": {
+		"@types/node": "^18.11.9",
 		"katex": "^0.15.2",
 		"prettier": "^2.5.1",
 		"vuepress-plugin-giscus": "^2.0.0-alpha.25"
