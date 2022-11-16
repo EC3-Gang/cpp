@@ -1,4 +1,6 @@
 import { path } from '@vuepress/utils';
+import { defaultTheme } from 'vuepress';
+import mdKatex from '@commenthol/markdown-it-katex';
 
 export default {
 	port: 3000,
@@ -28,9 +30,6 @@ export default {
 			},
 		],
 	],
-	// when using vuepress-vite package, you can omit this field
-	// because vite is the default bundler
-	bundler: '@vuepress/bundler-vite',
 	bundlerConfig: {
 		vuePluginOptions: {
 			template: {
@@ -59,7 +58,7 @@ export default {
 		},
 	},
 	extendsMarkdown: (md: { use: (arg: any) => void; }) => {
-		md.use(require('@commenthol/markdown-it-katex'));
+		md.use(mdKatex);
 	},
 	plugins: [
 		[
@@ -75,7 +74,7 @@ export default {
 		[
 			'@vuepress/plugin-shiki',
 			{
-				theme: 'solarized-dark',
+				theme: 'one-dark-pro',
 			},
 		],
 		// prettier-ignore
@@ -94,7 +93,7 @@ export default {
 			},
 		],
 	],
-	themeConfig: {
+	theme: defaultTheme({
 		docsDir: 'docs',
 		docsBranch: 'master',
 		logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
@@ -149,5 +148,5 @@ export default {
 				},
 			],
 		},
-	},
+	}),
 };
