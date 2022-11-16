@@ -1,1 +1,0 @@
-const e={key:"v-68fb3c52",path:"/guide/others/macros.html",title:"Helpful Macros",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1657952029e3,contributors:[{name:"DET171",email:"mrgeek484@gmail.com",commits:1}]},filePathRelative:"guide/others/macros.md"};export{e as data};

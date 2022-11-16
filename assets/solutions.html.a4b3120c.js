@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-8bfb0482","path":"/guide/others/solutions.html","title":"Codebreaker Solutions","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1657952029000,"contributors":[{"name":"DET171","email":"mrgeek484@gmail.com","commits":1}]},"filePathRelative":"guide/others/solutions.md"}');export{e as data};
