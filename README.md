@@ -1,6 +1,6 @@
 # HCI EC3 CPP Guide
 
-Made by a few EC3 guys in Lower sec.
+a concise guide to competitive programming in c++, competitive programming algorithms, and (most) other things about competitive programming.
 
 ## Contributing
 
