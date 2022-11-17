@@ -110,6 +110,11 @@ export default {
 					children: ['/intro.md', '/general.md'],
 				},
 				{
+					text: 'Programming Environment',
+					children: ['/guide/env/compilers.md',
+						'/guide/env/ides.md'],
+				},
+				{
 					text: 'The Basics',
 					children: [
 						'/guide/basics/README.md',
