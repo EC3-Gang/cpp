@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-86e3213c","path":"/guide/env/ides.html","title":"Code Editors/IDEs","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1668679605000,"contributors":[{"name":"Canaris","email":"mrgeek484@gmail.com","commits":1}]},"filePathRelative":"guide/env/ides.md"}');export{e as data};
