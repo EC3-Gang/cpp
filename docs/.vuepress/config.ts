@@ -1,4 +1,3 @@
-import { path } from '@vuepress/utils';
 import { defaultTheme } from 'vuepress';
 import mdKatex from '@commenthol/markdown-it-katex';
 
@@ -7,7 +6,7 @@ export default {
 	sidebarDepth: 5,
 	base: process.env.BUILD_PATH,
 	head: [
-		['link', { rel: 'icon', href: 'https://i.imgur.com/gh25FnY_d.png' }],
+		['link', { rel: 'icon', href: 'https://i.imgur.com/qnVz2sS.png?maxwidth=760&fidelity=grand' }],
 		[
 			'link',
 			{
@@ -145,6 +144,7 @@ export default {
 					children: [
 						'/guide/others/solutions.md',
 						'/guide/others/macros.md',
+						'/guide/others/debugging-utils.md',
 						'/guide/others/LICENSE.md',
 					],
 				},

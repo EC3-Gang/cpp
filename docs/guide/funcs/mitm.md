@@ -4,11 +4,11 @@
 
 You want to check the sum of everything
 
-O(N²) is too slow for you so you hire the man in the middle's help.
+$\mathcal{O(N^2)}$ is too slow for you so you hire the man in the middle's help.
 
 He tells you there is an epic thing called meet in the middle.
 
-What this does is that it swaps N and 2 around, making it O(2ⁿ).
+What this does is that it swaps $\mathcal{N}$ and $\mathcal{2}$ around, making it $\mathcal{O(2^n)}$.
 
 Ehh heres the code:
 

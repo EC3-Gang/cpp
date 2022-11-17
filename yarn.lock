@@ -2920,7 +2920,12 @@ vue@^3.2.33, vue@^3.2.36, vue@^3.2.37, vue@^3.2.41:
     "@vue/server-renderer" "3.2.45"
     "@vue/shared" "3.2.45"
 
-vuepress-plugin-giscus@^2.0.0-alpha.25:
+vuepress-plugin-giscus-comment@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-giscus-comment/-/vuepress-plugin-giscus-comment-2.0.0.tgz#0710da146172c40e3f9310535aebeabb66a8cc2d"
+  integrity sha512-A6q3ghdD5+rrNydyelRGLtMmMCKRFWEOj/DsYzLSYCykYFxIdXirqprAYiFmkUPDwstAguvu8i+7ngoyvXSOGg==
+
+vuepress-plugin-giscus@^2.0.0-alpha.26:
   version "2.0.0-alpha.26"
   resolved "https://registry.yarnpkg.com/vuepress-plugin-giscus/-/vuepress-plugin-giscus-2.0.0-alpha.26.tgz#2011e763cc4b943d6ba6f0fe3f144bd023a4985c"
   integrity sha512-3w0DbSICDSLes9K923Q2cUwh+PcHh2r+cVpJqcjwvcvi5+DVOvv8c3fl/0FTeTVan+OuKPc+o/qqU4TGnpMX5w==
