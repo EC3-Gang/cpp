@@ -6,7 +6,7 @@ tbody {
 
 @font-face {
 	font-family: 'Cascadia Code';
-	src: url('./CascadiaCode.woff2') format('woff2');
+	src: url('/CascadiaCode.woff2') format('woff2');
 }
 
 pre, code {
@@ -16,7 +16,7 @@ pre, code {
 pre {
 	-moz-tab-size: 2; /* Firefox */
 	-o-tab-size: 2; /* Opera */
-	tab-size: 2; /* Others */	
+	tab-size: 2 !important; /* Others */	
 } 
 
 :root {
