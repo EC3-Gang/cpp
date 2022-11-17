@@ -51,3 +51,6 @@ sudo apk add gcc
 
 ### Installing Clang
 Simply refer to [this](https://releases.llvm.org/download.html).
+
+### Installing C++ on Windows
+Unlike Linux, GCC is not pre-installed on Windows. Instead, you can go to https://jmeubank.github.io/tdm-gcc/download/ and install a gcc compiler. Do note the different versions for 64-bit and 32-bit editions.
