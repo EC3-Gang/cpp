@@ -191,7 +191,7 @@ int main() {
 }
 ```
 
-### Maps
+### Maps and Unordered Maps
 
 A map is a key-value data structure, with a key being linked to a value (can be different datatype).
 
@@ -218,7 +218,31 @@ int main() {
 }
 ```
 
-### Sets
+Unordered maps are different because its a bit faster than the map.
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  unordered_map<string, int> m;
+  m["yo"] = 6;
+  m["mom"] = 9;
+  m["so"] = 4;
+  m["fat"] = 420;
+
+  cout << m["fat"] << '\n';
+  cout << m.size() << '\n';
+
+  m.insert(pair<string, int>("abc", 123)); // can also insert like this
+
+  // loop through key and value
+  for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
+    cout  << itr->first << ": " << itr->second << 'n';
+  }
+}
+```
+### Sets and Unordered Sets
 
 A set is a more picky vector, it:
 
@@ -231,6 +255,34 @@ using namespace std;
 
 int main() {
   set<int> s;
+
+  s.insert(40);
+  s.insert(35);
+  s.insert(55);
+
+  set<int>::iterator itr; // defines an iterator of the set
+  cout << "this set weighs " << s.size() << " kg\n";
+
+  // prints all the elements in the set
+  for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+
+  s.erase(s.begin(), s.find(55)); // remove 55
+
+  // lower_bound() and upper_bound(): returns an iterator to the first element which is
+  // equal to OR before / after the element in the set
+  cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
+}
+```
+
+Unlike the set, and unordered set does not sort, so instead of the usual O(log(N)), insertions are O(1).
+
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  unordered_set<int> s;
 
   s.insert(40);
   s.insert(35);
