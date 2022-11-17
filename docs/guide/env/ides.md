@@ -18,8 +18,11 @@ I like to use it with Github Copilot :D
 ## Good Ol' Vim
 [Vim](https://www.vim.org) is a terminal-based text editor, and written in C. It is a very powerful editor, and you can use it together with [Vim-Plug](https://github.com/junegunn/vim-plug) for plugins.
 
+## Geany
+[Geany](https://www.geany.org/) is a free and open-source lightweight code editor with basic IDE features. It looks arguably uglier than all other IDEs and editors listed on this page.
+
 ## Atom
 Deprecated. Still feel kinda sad about it.
 
 ## CLion
-Is paid, uses more RAM than GTA V in a VM, would 100% not recommend.
+[CLion](https://www.jetbrains.com/clion/) is an IDE for C/C++ development. It is developed by JetBrains, and paid. It is feature rich, but the downside of that is that it is very resource hungry, and according to a MacOS user, uses more RAM than GTA V running in a VM.
