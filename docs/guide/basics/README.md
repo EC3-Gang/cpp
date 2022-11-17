@@ -5,7 +5,7 @@ title: The Basics
 
 # syntax
 
-syntax is the most essential to grasp to write a c++ program. here is an overview.
+Syntax is the most essential to grasp to write a c++ program. Here is an overview.
 
 ## structure
 
@@ -17,7 +17,7 @@ int main() {
 }
 ```
 
-this is a basic C++ program which prints "Hello World" to the console.
+This is a basic C++ program which prints "Hello World" to the console.
 
 It is made up of three essential parts:
 
