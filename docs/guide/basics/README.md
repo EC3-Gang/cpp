@@ -3,11 +3,11 @@ lang: en-us
 title: The Basics
 ---
 
-# The basics of the basics of C++
+# syntax
 
-Ok, so essentially, these are the things you must take note of when starting out with `C++`. I will first cover the data types.
+syntax is the most essential to grasp to write a c++ program. here is an overview.
 
-## The Structure of a C++ Program
+## structure
 
 ```cpp
 #include <iostream>
@@ -17,18 +17,21 @@ int main() {
 }
 ```
 
-This is a basic C++ program which prints "Hello World" to the console.
+this is a basic C++ program which prints "Hello World" to the console.
 
 It is made up of three essential parts:
 
-1. `#include`: It includes the necessary header files for functions used in the program.
-2. `using namespace std`: Includes that standard library of functions.
-3. `int main() {}`: The main function, where all your code should go.
+1. `#include`: includes the necessary header files for functions used in the program.
+2. `using namespace std`: includes the standard library of c++ functions.
+3. `int main() {}`: the main function, where all driver code should go.
 
-Notice that we use `cout` for printing. The opposite of that, `cin >> variable`,
-is for receiving input to a variable, however that variable must be defined prior to the statement.
+`cout` is for standard output (i.e. "printing"), and `cin` 
+is for receiving input to a variable defined earlier. 
 
-## Data Types
+## datatypes
+
+variables can be thought of as 'containers' for values, that can be changed and reused throughout a program.
+in c++, variables take one of many datatypes, shown below.
 
 ### Basic Data Types
 
@@ -42,17 +45,10 @@ is for receiving input to a variable, however that variable must be defined prio
 | `string`  | variable        | Multi-character text                          | `'hi mom'`           |
 
 ### Data Type Modifiers
+these are most commonly used for numeric datatypes (`int` and `double`),
+to resize their limits according to the program's requirements.
 
-Numeric data types (`int` and `double`) can be modified with:
-
-- `short`
-- `long` (or even `long long`)
-- `signed`
-- `unsigned`
-
-which give a variety of ranges of the same numerical datatype.
-
-Note that the default modified datatype is `int`.
+the default modified datatype is `int`.
 
 | Modified Datatype    | Size (in bytes) | Range                               |
 | -------------------- | --------------- | ----------------------------------- |
@@ -65,11 +61,16 @@ Note that the default modified datatype is `int`.
 | `unsigned long long` | $8$             | $0$ to $18 446 744 073 709 551 615$ |
 | `long double`        | $12$            | -                                   |
 
-## Control Flow
+## control flow
+a program can include logical statements, that control how the program behaves in differing conditions.
 
-### If Statements
+### if statements
 
-For leaving decisions to your computer.
+these can be thought of as asking yes/no questions to the computer.
+
+if the answer is 'yes', something would happen; if 'no', something **else** would happen.
+
+below is code that invites the user to a drink if 18 and over, or else denies access.
 
 ```cpp
 #include <iostream>
@@ -84,12 +85,26 @@ int main() {
 }
 ```
 
-Notice that the conditions are surrounded by **parentheses**
+conditions in if-statements are surrounded by **parentheses**
 and the following code to be executed is in curly braces.
 
-If you know how programming works, you can also use `else if` for multiple conditions.
+multiple conditions can be expressed with `else if`:
+```cpp
+#include <iostream>
+using namespace std;
+int main() {
+  int a;
+  cout << "enter your age: ";
+  cin >> a;
+
+  if (a < 18) { cout << "you cannot drink nor smoke."; }
+	else if (a < 21) { cout << "you can drink, but not smoke."; }
+  else { cout << "you can do both! welcome to adulthood!"; }
+}
+```
 
 #### Logical Operators
+if multiple conditions are to be satisfied, the following can be used. 
 
 | Op.    | Means | True Example                 | False Example                |
 | ------ | ----- | ---------------------------- | ---------------------------- |
@@ -98,6 +113,7 @@ If you know how programming works, you can also use `else if` for multiple condi
 | `!`    | "not" | `(!(5 < 3))`                 | `(!('a' == 'a'))`            |
 
 #### Comparison Operators
+these are used inside conditions to compare values to one another, resulting in `true`/`false` return values.
 
 | Op.  | Means                       | True Example |
 | ---- | --------------------------- | ------------ |
@@ -112,29 +128,33 @@ If you know how programming works, you can also use `else if` for multiple condi
 
 #### For Loop
 
-This is a bit complicated. There are 3 perimeters in a for loop: initialization, loop condition, and increment.
+say you wanted to repeat a block of code some number of times.
+writing the same block of code that many times would be tiresome, and it gets worse if the number of times to repeat it is determined by the user.
 
-1. Initialization: initialize whatever variables you want to use
+we can use for loops instead! a for-loop contains these three parts
 
-2. Loop condition: loop as long as this is true
+1. initialisation: initialise the counter variable to be used
+2. condition: loop as long as the condition is true
+3. increment/decrement: increment/decrement variables with every run of the loop
 
-3. Increment: change variables that you initalized in step 1
-
-Note: any of these parts can be ommited
+any of these parts can be ommited.
 
 ```cpp
 #include <iostream>
 using namespace std;
 int main() {
   //  initialize, cond., inc./dec.
+	//  output: 1 2 3 4 5 
   for (int i = 1; i <= 5; i++) { cout << i << ' '; }
+	//  output: 4 3 2 1
   for (int i = 4; i > 0; i--) { cout << i << ' '; }
 }
 ```
 
 #### While Loop
+if you didn't have a certain number of times the loop should run, a loop can still run as long as certain condition(s) hold true.
 
-As long as (condition) is true, run the loop.
+the block of code inside the loop will repeat as long as the condition is true.
 
 ```cpp
 #include <iostream>
@@ -145,50 +165,85 @@ int main() {
     cout << i << ' ';
     i--;
   }
+	// output: 10 9 8 7 6 5 4 3 2 1
 }
 ```
 
-## Functions (or subroutines, as I like to call it)
-There are different types of functions
-1. The int function
-This function returns a int
+## Functions 
+functions define a block of code to be reused throughout the program at different junctures.
+
+you can think of these as variables but for blocks of code.
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+// function name, (parameters)
+int sum(int a, int b, int c) {
+	return a + b + c;
+}
+
+int main() {
+	cout << sum(1, 2, 3);
+	// output: 6
+}
+```
+
+normally, a function is expected to return a certain value after the operations inside have been completed. these values take the c++ datatypes we've seen before:
+
+1. `int` function
+
 ```cpp
 int add(int a, int b, int c) {
   return a + b + c;
 }
 ```
-2. The void function
-This functions returns nothing lmao
+
+2. `void` function
+
+this function returns nothing, and is normally used to modify existing variables.
+
 ```cpp
-void add(int a, int b, int c) {
-  cout<<a+b+c;
+void addAndPrint(int a, int b, int c) {
+  cout << a + b + c;
 }
+
+int main() { addAndPrint(1, 2, 3); }
 ```
-3. The string function
-This returns a string
+
+3. `string` function
+
+returns a string.
+
 ```cpp
 string add(string a, string b, string c) {
   return a + b + c;
 }
+
+int main() {
+	cout << add("ab", "cd", "ef");
+	// output: abcdef
+}
 ```
-4. The boolean function
-This function returns a boolean (true or false)
-You can do this:
+
+4. `bool` function
+
+returns a boolean value: `true` or `false`.
+
 ```cpp
-bool add(int a, int b, int c) {
-  if(a+b>c)
-  {
-    return true;
-  }
+bool check(int a, int b, int c) {
+  if (a + b > c) return true;
   return false;
 }
 ```
-Or this:
+
+note: _the_ `else` _keyword isn't needed here, because when_ `return` _is called, the function ends, ignoring everything else after it._
+
+alternatively,
 ```cpp
 int add(int a, int b, int c) {
-  return (a+b>c);
+  return a + b > c;
 }
 ```
-Notice how in the first code, there is no "else" function to help return false. This is because after returning the desired value, it will stop the function.
-The return type of the function is always specified,
-followed by its parameters (with their specific types).
+
+note: this function can still produce `true` or `false` results depending on the values of `a`, `b` and `c`.
