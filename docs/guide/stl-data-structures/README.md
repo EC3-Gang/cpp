@@ -37,6 +37,7 @@ int main() {
   cout << arr.size(); // size of the array
 }
 ```
+
 Here is the basic code to input an array:
 ```cpp
 #include <bits/stdc++.h>
@@ -51,11 +52,10 @@ int main() {
   }
 }
 ```
-For Python users, the main difference you will notice is that in C++, you can input everything in one line, which makes it much less troublesome than Python, which you will have to use a special function to input all the elements in an array in one line.
 
 ### Vectors
 
-Basically arrays with the capability to append elements (from the end) and pop elements from the back.
+Flexible-sized arrays with the capability to append elements (from the end) and pop elements from the back.
 
 Erasing elements from anywhere in the vector is also allowed.
 
@@ -83,10 +83,10 @@ int main() {
 
 ### Deques
 
-Pronounced 'deck' or 'd-q', I don't give a damn about how it's pronounced.
+Pronounced 'deck' or 'd-q'.
 
-It's a vector on steroids, allowing you to insert (from the front) and append (from the back) elements.
-It can also pop elements from the front & back.
+A vector on steroids, allowing you to insert (from the front) and append (from the back) elements.
+It can also pop elements from the front and back.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -117,7 +117,7 @@ int main() {
 
 Stacks are basically stacks of _roti prata_ (or your mountain of procrastinated homework).
 
-You can only access the top element, and only erase the top element. (What kind of sick freak would take prata from the bottom of the stack)?
+You can only access the top element, and only erase the top element. (What kind of sick freak would take prata from the bottom of the stack?)
 
 ```cpp
 #include <bits/stdc++.h>
@@ -140,7 +140,7 @@ int main() {
 ### Queues
 
 Like the perpetually long canteen queue in the HS Canteen during 1:30 pm lunch break,
-queues add elements from the back and pop elements from the front (in case you don't know how a real-life queue works).
+queues add elements from the back and pop elements from the front (in case you don't know how a real-life queue works, because you haven't stopped programming for 72 hours straight).
 
 ```cpp
 #include <bits/stdc++.h>
@@ -161,15 +161,15 @@ int main() {
     q.pop();
   }
 
-  // NOTE: notice that only 1 occurrence of 4 is printed out, because a queue removes duplicate values
+  /* NOTE: only 1 occurrence of 4 is printed out,
+           because a queue removes duplicate values */
 }
 ```
 
 ### Priority Queues
 
 Like a queue, but the most popular boy is now at the end perpetually.
-
-Priority queues sort the elements every time a new element is pushed in.
+Priority queues sort the elements (in _descending_ order) every time a new element is pushed in.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -195,6 +195,8 @@ int main() {
 
 A map is a key-value data structure, with a key being linked to a value (can be different datatype).
 
+You can think of these as pairs of keys and locks.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -218,7 +220,7 @@ int main() {
 }
 ```
 
-Unordered maps are different because its a bit faster than the map.
+Unordered maps are different because they're slightly faster than the map.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -274,7 +276,7 @@ int main() {
 }
 ```
 
-Unlike the set, and unordered set does not sort, so instead of the usual O(log(N)), insertions are O(1).
+Unlike the set, and unordered set does not sort, so instead of the usual $\mathcal{O}(\log N)$, insertions are $\mathcal{O}(1)$.
 
 
 ```cpp
@@ -302,8 +304,19 @@ int main() {
 }
 ```
 
+### Iterating
+You may have noticed all the examples use something like this to
+output a data structure.
+```cpp
+for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+```
+
+There is a shortcut:
+```cpp
+for (auto i : s) cout << i << ' ';
+```
+that more people generally like using.
+
 ### Final Notes
-
-There are dozens of STL data structures out there, but these are the most popular ones.
-
-Anyway I copied most of them from <https://www.geeksforgeeks.org>.
+It takes time to memorise all the different uses for all the data structures,
+so keep practising!
