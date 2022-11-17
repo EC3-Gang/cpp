@@ -96,7 +96,7 @@ export default {
 	theme: defaultTheme({
 		docsDir: 'docs',
 		docsBranch: 'master',
-		logo: 'https://i.imgur.com/gh25FnY_d.webp?maxwidth=760&fidelity=grand',
+		logo: 'https://i.imgur.com/qnVz2sS.png?maxwidth=760&fidelity=grand',
 		repo: 'EC3-Gang/cpp',
 		navbar: [
 			{
@@ -114,12 +114,12 @@ export default {
 					text: 'The Basics',
 					children: [
 						'/guide/basics/README.md',
-						'/guide/stl-data-structures/README.md',
 					],
 				},
 				{
-					text: 'Advanced Topics',
+					text: 'Topics',
 					children: [
+						'/guide/stl-data-structures/README.md',
 						'/guide/more-adv/README.md',
 						'/guide/more-adv/dp.md',
 						'/guide/more-adv/classes.md',
