@@ -1,6 +1,6 @@
----
-title: Introduction
----
+***
+
+## title: Introduction
 
 ## CPP Guide for Competitive Programming (HCI EC³)
 
@@ -8,7 +8,7 @@ This a guide made by a few EC³ members in Lower Secondary. Have fun reading and
 
 ### Introduction to CP
 
-_Informatics olympiads_, also known as _competitive programming_,
+*Informatics olympiads*, also known as *competitive programming*,
 is a form of programming where contestants are required to solve
 problems within a certain time limit.
 

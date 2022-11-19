@@ -17,7 +17,8 @@ Naive recursive method (TLEs):
 
 ```cpp
 long long sum(long long n) {
-  if (n <= 1) return n;
+  if (n <= 1)
+    return n;
   return sum(n - 1) + sum(n - 2);
 }
 ```
@@ -42,7 +43,7 @@ long long sum(long long n) {
 }
 ```
 
-The states are stored in $\text{memo}[]$, and the transition is $\text{memo}[n] = \text{sum}[n - 1] + \text{sum}[n - 2]$. The base cases are when $n \leq 1$, $\text{memo}[n] = n$.
+The states are stored in $\text{memo}\[]$, and the transition is $\text{memo}\[n] = \text{sum}\[n - 1] + \text{sum}\[n - 2]$. The base cases are when $n \leq 1$, $\text{memo}\[n] = n$.
 
 While this form of DP may be more intuitive sometimes, it usually takes up more memory.
 
@@ -56,11 +57,11 @@ Bottom-up Fibonacci algorithm:
 long long memo[n];
 memo[0] = 0, memo[1] = 1;
 for (long long i = 2; i < n; i++) {
-  memo[i] = memo[i-1] + memo[i-2];
+  memo[i] = memo[i - 1] + memo[i - 2];
 }
 ```
 
-The states are stored in $\text{memo}[n]$, the base cases are $\text{memo}[0]$ and $\text{memo}[1]$, and the transition is $\text{memo}[i] = \text{memo}[i - 1] + \text{memo}[i - 2]$.
+The states are stored in $\text{memo}\[n]$, the base cases are $\text{memo}\[0]$ and $\text{memo}\[1]$, and the transition is $\text{memo}\[i] = \text{memo}\[i - 1] + \text{memo}\[i - 2]$.
 
 ### Conclusion
 
@@ -103,10 +104,12 @@ Hence, we can store the sums as so:
 ```cpp
 long long arr[n], prefix[n];
 for (long long i = 0; i < n; i++) {
-  if (!i) prefix[i] = arr[i];
-  else prefix[i] = arr[i] + prefix[i-1];
+  if (!i)
+    prefix[i] = arr[i];
+  else
+    prefix[i] = arr[i] + prefix[i - 1];
 }
-long long sum = prefix[ub] - prefix[lb-1];
+long long sum = prefix[ub] - prefix[lb - 1];
 ```
 
 While this method may seem too slow, it actually shortens down

@@ -1,7 +1,8 @@
----
+***
+
 lang: en-us
 title: The Basics
----
+-----------------
 
 # syntax
 
@@ -12,21 +13,19 @@ Syntax is the most essential to grasp to write a c++ program. Here is an overvie
 ```cpp
 #include <iostream>
 using namespace std;
-int main() {
-  cout << "Hello World";
-}
+int main() { cout << "Hello World"; }
 ```
 
 This is a basic C++ program which prints "Hello World" to the console.
 
 It is made up of three essential parts:
 
-1. `#include`: includes the necessary header files for functions used in the program.
-2. `using namespace std`: includes the standard library of c++ functions.
-3. `int main() {}`: the main function, where all driver code should go.
+1.  `#include`: includes the necessary header files for functions used in the program.
+2.  `using namespace std`: includes the standard library of c++ functions.
+3.  `int main() {}`: the main function, where all driver code should go.
 
-`cout` is for standard output (i.e. "printing"), and `cin` 
-is for receiving input to a variable defined earlier. 
+`cout` is for standard output (i.e. "printing"), and `cin`
+is for receiving input to a variable defined earlier.
 
 ## datatypes
 
@@ -45,6 +44,7 @@ in c++, variables take one of many datatypes, shown below.
 | `string`  | variable        | Multi-character text                          | `'hi mom'`           |
 
 ### Data Type Modifiers
+
 these are most commonly used for numeric datatypes (`int` and `double`),
 to resize their limits according to the program's requirements.
 
@@ -62,6 +62,7 @@ the default modified datatype is `int`.
 | `long double`        | $12$            | -                                   |
 
 ## control flow
+
 a program can include logical statements, that control how the program behaves in differing conditions.
 
 ### if statements
@@ -80,8 +81,11 @@ int main() {
   cout << "enter your age: ";
   cin >> a;
 
-  if (a < 18) { cout << "access denied"; }
-  else { cout << "have a drink!"; }
+  if (a < 18) {
+    cout << "access denied";
+  } else {
+    cout << "have a drink!";
+  }
 }
 ```
 
@@ -89,6 +93,7 @@ conditions in if-statements are surrounded by **parentheses**
 and the following code to be executed is in curly braces.
 
 multiple conditions can be expressed with `else if`:
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -97,14 +102,19 @@ int main() {
   cout << "enter your age: ";
   cin >> a;
 
-  if (a < 18) { cout << "you cannot drink nor smoke."; }
-	else if (a < 21) { cout << "you can drink, but not smoke."; }
-  else { cout << "you can do both! welcome to adulthood!"; }
+  if (a < 18) {
+    cout << "you cannot drink nor smoke.";
+  } else if (a < 21) {
+    cout << "you can drink, but not smoke.";
+  } else {
+    cout << "you can do both! welcome to adulthood!";
+  }
 }
 ```
 
 #### Logical Operators
-if multiple conditions are to be satisfied, the following can be used. 
+
+if multiple conditions are to be satisfied, the following can be used.
 
 | Op.    | Means | True Example                 | False Example                |
 | ------ | ----- | ---------------------------- | ---------------------------- |
@@ -113,6 +123,7 @@ if multiple conditions are to be satisfied, the following can be used.
 | `!`    | "not" | `(!(5 < 3))`                 | `(!('a' == 'a'))`            |
 
 #### Comparison Operators
+
 these are used inside conditions to compare values to one another, resulting in `true`/`false` return values.
 
 | Op.  | Means                       | True Example |
@@ -133,9 +144,9 @@ writing the same block of code that many times would be tiresome, and it gets wo
 
 we can use for loops instead! a for-loop contains these three parts
 
-1. initialisation: initialise the counter variable to be used
-2. condition: loop as long as the condition is true
-3. increment/decrement: increment/decrement variables with every run of the loop
+1.  initialisation: initialise the counter variable to be used
+2.  condition: loop as long as the condition is true
+3.  increment/decrement: increment/decrement variables with every run of the loop
 
 any of these parts can be ommited.
 
@@ -144,14 +155,19 @@ any of these parts can be ommited.
 using namespace std;
 int main() {
   //  initialize, cond., inc./dec.
-	//  output: 1 2 3 4 5 
-  for (int i = 1; i <= 5; i++) { cout << i << ' '; }
-	//  output: 4 3 2 1
-  for (int i = 4; i > 0; i--) { cout << i << ' '; }
+  //  output: 1 2 3 4 5
+  for (int i = 1; i <= 5; i++) {
+    cout << i << ' ';
+  }
+  //  output: 4 3 2 1
+  for (int i = 4; i > 0; i--) {
+    cout << i << ' ';
+  }
 }
 ```
 
 #### While Loop
+
 if you didn't have a certain number of times the loop should run, a loop can still run as long as certain condition(s) hold true.
 
 the block of code inside the loop will repeat as long as the condition is true.
@@ -165,11 +181,12 @@ int main() {
     cout << i << ' ';
     i--;
   }
-	// output: 10 9 8 7 6 5 4 3 2 1
+  // output: 10 9 8 7 6 5 4 3 2 1
 }
 ```
 
-## Functions 
+## Functions
+
 functions define a block of code to be reused throughout the program at different junctures.
 
 you can think of these as variables but for blocks of code.
@@ -179,71 +196,63 @@ you can think of these as variables but for blocks of code.
 using namespace std;
 
 // function name, (parameters)
-int sum(int a, int b, int c) {
-	return a + b + c;
-}
+int sum(int a, int b, int c) { return a + b + c; }
 
 int main() {
-	cout << sum(1, 2, 3);
-	// output: 6
+  cout << sum(1, 2, 3);
+  // output: 6
 }
 ```
 
 normally, a function is expected to return a certain value after the operations inside have been completed. these values take the c++ datatypes we've seen before:
 
-1. `int` function
+1.  `int` function
 
 ```cpp
-int add(int a, int b, int c) {
-  return a + b + c;
-}
+int add(int a, int b, int c) { return a + b + c; }
 ```
 
-2. `void` function
+2.  `void` function
 
 this function returns nothing, and is normally used to modify existing variables.
 
 ```cpp
-void addAndPrint(int a, int b, int c) {
-  cout << a + b + c;
-}
+void addAndPrint(int a, int b, int c) { cout << a + b + c; }
 
 int main() { addAndPrint(1, 2, 3); }
 ```
 
-3. `string` function
+3.  `string` function
 
 returns a string.
 
 ```cpp
-string add(string a, string b, string c) {
-  return a + b + c;
-}
+string add(string a, string b, string c) { return a + b + c; }
 
 int main() {
-	cout << add("ab", "cd", "ef");
-	// output: abcdef
+  cout << add("ab", "cd", "ef");
+  // output: abcdef
 }
 ```
 
-4. `bool` function
+4.  `bool` function
 
 returns a boolean value: `true` or `false`.
 
 ```cpp
 bool check(int a, int b, int c) {
-  if (a + b > c) return true;
+  if (a + b > c)
+    return true;
   return false;
 }
 ```
 
-note: _the_ `else` _keyword isn't needed here, because when_ `return` _is called, the function ends, ignoring everything else after it._
+note: *the* `else` *keyword isn't needed here, because when* `return` *is called, the function ends, ignoring everything else after it.*
 
 alternatively,
+
 ```cpp
-int add(int a, int b, int c) {
-  return a + b > c;
-}
+int add(int a, int b, int c) { return a + b > c; }
 ```
 
 note: this function can still produce `true` or `false` results depending on the values of `a`, `b` and `c`.

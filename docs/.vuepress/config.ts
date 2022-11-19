@@ -1,5 +1,8 @@
 import { defaultTheme } from 'vuepress';
 import mdKatex from '@commenthol/markdown-it-katex';
+import typeMarkdownIt from 'markdown-it';
+import { escapeHtml } from 'markdown-it/lib/common/utils.js';
+import { execSync } from 'child_process';
 
 export default {
 	port: 3000,
@@ -15,8 +18,7 @@ export default {
 			},
 		],
 		[
-			'link',
-			{
+			'link', {
 				rel: 'stylesheet',
 				href: 'https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
 			},
@@ -56,7 +58,18 @@ export default {
 			level: [2, 3, 4, 5],
 		},
 	},
-	extendsMarkdown: (md: { use: (arg: any) => void; }) => {
+	extendsMarkdown: (md: typeMarkdownIt) => {
+		md.renderer.rules.code_block = (tokens, idx, options, env, slf) => {
+			const token = tokens[idx];
+			const src = token.content;
+			// format src with clang-format
+			const formattedSrc = execSync('clang-format -style=file', {
+				input: src,
+				encoding: 'utf8',
+			});
+
+			return `<pre ${slf.renderAttrs(token)}><code>${escapeHtml(formattedSrc)}</code></pre>`;
+		};
 		md.use(mdKatex);
 	},
 	plugins: [

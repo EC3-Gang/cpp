@@ -1,7 +1,8 @@
----
+***
+
 lang: en-us
 title: Binary Search
----
+--------------------
 
 # Binary Search
 
@@ -15,14 +16,14 @@ reduce the time complexity to $\mathcal{O}(\log{n})$.
 
 The basic steps to perform Binary Search are:
 
-1. Begin with an interval covering the whole array.
-2. If the value of the search key is less than the item in the
-   middle of the interval, narrow the interval to the lower half.
-3. Otherwise, narrow it to the upper half.
-4. Go back to Step 2 until the value is found or the interval is empty.
+1.  Begin with an interval covering the whole array.
+2.  If the value of the search key is less than the item in the
+    middle of the interval, narrow the interval to the lower half.
+3.  Otherwise, narrow it to the upper half.
+4.  Go back to Step 2 until the value is found or the interval is empty.
 
 ![binary search](https://www.geeksforgeeks.org/wp-content/uploads/Binary-Search.png)
-_Image from GeeksforGeeks_
+*Image from GeeksforGeeks*
 
 ## Implementation
 
@@ -75,18 +76,17 @@ For example:
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
-int meg(int n,int peaches)
-{
-	if(n==0) return peaches;
-	peaches=(peaches+1)*2;
-	return meg(n-1,peaches);
+int meg(int n, int peaches) {
+  if (n == 0)
+    return peaches;
+  peaches = (peaches + 1) * 2;
+  return meg(n - 1, peaches);
 }
-int main()
-{
-	int peaches=1;
-	int n;
-	cin>>n;
-	cout<<meg(n,peaches);
+int main() {
+  int peaches = 1;
+  int n;
+  cin >> n;
+  cout << meg(n, peaches);
 }
 ```
 

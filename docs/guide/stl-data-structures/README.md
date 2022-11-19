@@ -1,14 +1,15 @@
----
+***
+
 lang: en-US
 title: STL Data Structures
----
+--------------------------
 
 ## STL Data Structures
 
 Here are some data structures found in the standard library and how to implement them,
 along with a few useful functions you should probably know about.
 
-[[toc]]
+\[\[toc]]
 
 ### Arrays
 
@@ -16,9 +17,9 @@ By far the simplest data structure you should probably know about is the array.
 
 Arrays have:
 
-- a fixed size (number of elements it can contain)
-  - no capability to erase / append elements
-- elements with all the same datatypes
+*   a fixed size (number of elements it can contain)
+    *   no capability to erase / append elements
+*   elements with all the same datatypes
 
 Here's a short snippet showing what arrays can do:
 
@@ -27,8 +28,8 @@ Here's a short snippet showing what arrays can do:
 using namespace std;
 
 int main() {
-  int arr[5]; // defines an array of ints with size 5
-  arr[0] = 1; // sets the first element of the array to 1
+  int arr[5];  // defines an array of ints with size 5
+  arr[0] = 1;  // sets the first element of the array to 1
   arr[3] = 57; // sets the fourth element to 57
 
   cout << arr[3];
@@ -39,16 +40,17 @@ int main() {
 ```
 
 Here is the basic code to input an array:
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
   int n;
-  cin>>n;
+  cin >> n;
   int x[n];
-  for(int i=0;i<n;++i){
-    cin>>x[i];
+  for (int i = 0; i < n; ++i) {
+    cin >> x[i];
   }
 }
 ```
@@ -64,7 +66,7 @@ Erasing elements from anywhere in the vector is also allowed.
 using namespace std;
 
 int main() {
-  vector<int> v; // defines a vector of ints
+  vector<int> v;  // defines a vector of ints
   v.push_back(5); // appends 5 to the vector
   v.push_back(9);
   v.push_back(6);
@@ -72,12 +74,13 @@ int main() {
 
   v.pop_back(); // now what does the vector contain?
 
-  cout << v.size(); // size of the vector
+  cout << v.size();                     // size of the vector
   cout << v.front() << ' ' << v.back(); // first and last elements
 
   sort(v.begin(), v.end()); // sorts the vector
 
-  for (auto i : v) cout << i << ' '; // iterates through every element in the vector
+  for (auto i : v)
+    cout << i << ' '; // iterates through every element in the vector
 }
 ```
 
@@ -115,7 +118,7 @@ int main() {
 
 ### Stacks
 
-Stacks are basically stacks of _roti prata_ (or your mountain of procrastinated homework).
+Stacks are basically stacks of *roti prata* (or your mountain of procrastinated homework).
 
 You can only access the top element, and only erase the top element. (What kind of sick freak would take prata from the bottom of the stack?)
 
@@ -132,7 +135,8 @@ int main() {
   cout << s.top() << " is currently 1st place in kahoot\n";
   cout << "there are " << s.size() << " players\n";
 
-  while (!s.empty()) s.pop(); // check if the stack is empty, if not, keep popping!
+  while (!s.empty())
+    s.pop(); // check if the stack is empty, if not, keep popping!
   cout << s.size() << " more players left\n";
 }
 ```
@@ -169,7 +173,7 @@ int main() {
 ### Priority Queues
 
 Like a queue, but the most popular boy is now at the end perpetually.
-Priority queues sort the elements (in _descending_ order) every time a new element is pushed in.
+Priority queues sort the elements (in *descending* order) every time a new element is pushed in.
 
 ```cpp
 #include <bits/stdc++.h>
@@ -215,7 +219,7 @@ int main() {
 
   // loop through key and value
   for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-    cout  << itr->first << ": " << itr->second << 'n';
+    cout << itr->first << ": " << itr->second << 'n';
   }
 }
 ```
@@ -240,16 +244,17 @@ int main() {
 
   // loop through key and value
   for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-    cout  << itr->first << ": " << itr->second << 'n';
+    cout << itr->first << ": " << itr->second << 'n';
   }
 }
 ```
+
 ### Sets and Unordered Sets
 
 A set is a more picky vector, it:
 
-- removes duplicate values
-- sorts every time you insert an element
+*   removes duplicate values
+*   sorts every time you insert an element
 
 ```cpp
 #include <bits/stdc++.h>
@@ -266,18 +271,18 @@ int main() {
   cout << "this set weighs " << s.size() << " kg\n";
 
   // prints all the elements in the set
-  for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+  for (itr = s.begin(); itr != s.end(); s++)
+    cout << *itr << " ";
 
   s.erase(s.begin(), s.find(55)); // remove 55
 
-  // lower_bound() and upper_bound(): returns an iterator to the first element which is
-  // equal to OR before / after the element in the set
+  // lower_bound() and upper_bound(): returns an iterator to the first element
+  // which is equal to OR before / after the element in the set
   cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
 }
 ```
 
 Unlike the set, and unordered set does not sort, so instead of the usual $\mathcal{O}(\log N)$, insertions are $\mathcal{O}(1)$.
-
 
 ```cpp
 #include <bits/stdc++.h>
@@ -294,29 +299,37 @@ int main() {
   cout << "this set weighs " << s.size() << " kg\n";
 
   // prints all the elements in the set
-  for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+  for (itr = s.begin(); itr != s.end(); s++)
+    cout << *itr << " ";
 
   s.erase(s.begin(), s.find(55)); // remove 55
 
-  // lower_bound() and upper_bound(): returns an iterator to the first element which is
-  // equal to OR before / after the element in the set
+  // lower_bound() and upper_bound(): returns an iterator to the first element
+  // which is equal to OR before / after the element in the set
   cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
 }
 ```
 
 ### Iterating
+
 You may have noticed all the examples use something like this to
 output a data structure.
+
 ```cpp
-for (itr = s.begin(); itr != s.end(); s++) cout << *itr << " ";
+for (itr = s.begin(); itr != s.end(); s++)
+  cout << *itr << " ";
 ```
 
 There is a shortcut:
+
 ```cpp
-for (auto i : s) cout << i << ' ';
+for (auto i : s)
+  cout << i << ' ';
 ```
+
 that more people generally like using.
 
 ### Final Notes
+
 It takes time to memorise all the different uses for all the data structures,
 so keep practising!

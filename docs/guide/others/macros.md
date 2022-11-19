@@ -1,18 +1,22 @@
 # Macros & Aliases
+
 A macro is a piece of code in a program that is replaced by the value of the macro, and is defined by the `#define` directive. They're helpful when you don't want to type out something very long (like say `long long` or `vector<long long>`), and although not really recommended when you're writing a large application, they can save you a bit of time during competitions.
 
 An example would be:
+
 ```cpp
 #define endl "\n"
 ```
+
 since we can all agree that `endl` is easier to type than `"\n"` (...right?).
 
 Here's mine:
+
 ```cpp
-#include <bits/stdc++.h>
 #include <bit>
+#include <bits/stdc++.h>
 #if __has_include("debugging.hpp")
-	#include "debugging.hpp"
+#include "debugging.hpp"
 #endif
 #define endl "\n"
 using namespace std;
@@ -28,29 +32,24 @@ using vi = vector<int>;
 #define loopi(n) for (ll i = 0; i < n; i++)
 #define loopab(b, a) for (ll i = 0; i < b; i += a)
 void setIO() {
-	ios_base::sync_with_stdio(0); cin.tie(nullptr); cout.tie(nullptr); // see Fast I/O
+  ios_base::sync_with_stdio(0);
+  cin.tie(nullptr);
+  cout.tie(nullptr); // see Fast I/O
 }
-template<typename T>
-inline void in(T& inVar) {
-	cin >> inVar;
+template <typename T> inline void in(T &inVar) { cin >> inVar; }
+template <typename T, typename... S> inline void in(T &inVar, S &...args) {
+  cin >> inVar;
+  in(args...);
 }
-template <typename T, typename... S>
-inline void in(T& inVar, S&... args) {
-	cin >> inVar;
-	in(args...);
-}
-template <typename T>
-inline void out(T outVar) {
-	cout << outVar << '\n';
-}
-template <typename T, typename... S>
-inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+template <typename T> inline void out(T outVar) { cout << outVar << '\n'; }
+template <typename T, typename... S> inline void out(T outVar, S... args) {
+  cout << outVar << ' ';
+  out(args...);
 }
 ```
 
 and here's Darren's:
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -62,27 +61,19 @@ typedef unsigned long long ull;
 #define f0r(i, n) for (ll i = 0; i < (n); i++)
 #define r0f(i, n) for (ll i = (n); i >= 0; i--)
 #define far(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
-template <typename T>
-inline void in(T& inVar) {
-	cin >> inVar;
+#define setup                                                                  \
+  ios_base::sync_with_stdio(false);                                            \
+  cin.tie(nullptr);                                                            \
+  cout.tie(nullptr);
+template <typename T> inline void in(T &inVar) { cin >> inVar; }
+template <typename T, typename... S> inline void in(T &inVar, S &...args) {
+  cin >> inVar;
+  in(args...);
 }
-template <typename T, typename... S>
-inline void in(T& inVar, S&... args) {
-	cin >> inVar;
-	in(args...);
-}
-template <typename T>
-inline void out(T outVar) {
-	cout << outVar << '\n';
-}
-template <typename T, typename... S>
-inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+template <typename T> inline void out(T outVar) { cout << outVar << '\n'; }
+template <typename T, typename... S> inline void out(T outVar, S... args) {
+  cout << outVar << ' ';
+  out(args...);
 }
 typedef vector<ll> vi;
 typedef pair<ll, ll> pi;

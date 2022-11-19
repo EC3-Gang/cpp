@@ -13,9 +13,9 @@ What this does is that it swaps $\mathcal{N}$ and $\mathcal{2}$ around, making i
 Ehh heres the code:
 
 ```cpp
-  sort(arr,arr+v1.size());
-  int ans=0;
-  for(auto it : v){
-    ans+=upper_bound(arr,arr+v1.size(),k-it)-arr;
-  }
+sort(arr, arr + v1.size());
+int ans = 0;
+for (auto it : v) {
+  ans += upper_bound(arr, arr + v1.size(), k - it) - arr;
+}
 ```

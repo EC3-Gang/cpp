@@ -1,6 +1,6 @@
----
-title: LICENSE
----
+***
+
+## title: LICENSE
 
 # License (MIT)
 

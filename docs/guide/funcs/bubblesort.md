@@ -1,7 +1,8 @@
----
+***
+
 lang: en-us
 title: Bubble Sort
----
+------------------
 
 # Bubble Sort
 
@@ -18,10 +19,10 @@ It is one of the simplest sorting algorithms.
 | Auxiliary Space            | $\mathcal{O}(1)$                                                                |
 | Boundary Cases             | Bubble sort takes minimum time (order of $n$) when elements are already sorted. |
 
-| Property         | :white_check_mark:/:x: |
+| Property         | :white\_check\_mark:/:x: |
 | ---------------- | ---------------------- |
-| Sorting In Place | :white_check_mark:     |
-| Stable           | :white_check_mark:     |
+| Sorting In Place | :white\_check\_mark:     |
+| Stable           | :white\_check\_mark:     |
 
 ## Implementation
 
@@ -42,8 +43,8 @@ void bubbleSort(int arr[], int n) {
   for (i = 0; i < n - 1; i++) {
     swapped = false;
     for (j = 0; j < n - i - 1; j++) {
-      if (arr[j] > arr[j+1]) {
-        swap(&arr[j], &arr[j+1]);
+      if (arr[j] > arr[j + 1]) {
+        swap(&arr[j], &arr[j + 1]);
         swapped = true;
       }
     }

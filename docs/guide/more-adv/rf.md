@@ -5,14 +5,12 @@ Crazy, right?
 
 Pseudocode:
 
-```
-function fn with variable A & B
-  if A smaller or equals to B
-    print a
-    recall function fn with variable A+1 and B
+    function fn with variable A & B
+      if A smaller or equals to B
+        print a
+        recall function fn with variable A+1 and B
 
-fn(1, 10);
-```
+    fn(1, 10);
 
 Output:
 
@@ -54,6 +52,6 @@ int main() {
 }
 ```
 
-_The highlighted part is the recursive function._
+*The highlighted part is the recursive function.*
 
 The above solution was written for [this problem](https://codebreaker.xyz/problem/fibo), but TLE'd on one of the last test cases.
