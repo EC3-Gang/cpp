@@ -59,17 +59,6 @@ export default {
 		},
 	},
 	extendsMarkdown: (md: typeMarkdownIt) => {
-		md.renderer.rules.code_block = (tokens, idx, options, env, slf) => {
-			const token = tokens[idx];
-			const src = token.content;
-			// format src with clang-format
-			const formattedSrc = execSync('clang-format -style=file', {
-				input: src,
-				encoding: 'utf8',
-			});
-
-			return `<pre ${slf.renderAttrs(token)}><code>${escapeHtml(formattedSrc)}</code></pre>`;
-		};
 		md.use(mdKatex);
 	},
 	plugins: [

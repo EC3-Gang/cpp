@@ -1,6 +1,8 @@
-# Meet in the middle
+---
+title: Meet in the Middle
+---
 
-## Meet in the middle explanation
+# Meet in the middle
 
 You want to check the sum of everything
 

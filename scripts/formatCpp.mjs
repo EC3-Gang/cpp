@@ -1,5 +1,7 @@
 import { fromMarkdown as parse } from 'mdast-util-from-markdown';
 import { toMarkdown as generate } from 'mdast-util-to-markdown';
+import { frontmatter } from 'micromark-extension-frontmatter';
+import { frontmatterFromMarkdown, frontmatterToMarkdown } from 'mdast-util-frontmatter';
 import { execSync } from 'child_process';
 import console from 'consola';
 import assert from 'assert';
@@ -14,7 +16,6 @@ const format = (src) => {
 
 const scanDir = (dir) => {
 	// skip files under ./docs/.vuepress
-	if (dir.includes('docs/.vuepress')) return;
 	const files = fs.readdirSync(dir, { withFileTypes: true });
 	for (const file of files) {
 		if (file.isDirectory()) {
@@ -39,7 +40,10 @@ const scanDir = (dir) => {
 
 const formatCodeBlocks = (srcPath) => {
 	const src = fs.readFileSync(srcPath, 'utf8');
-	const astTree = parse(src);
+	const astTree = parse(src, {
+		extensions: [frontmatter(['yaml'])],
+		mdastExtensions: [frontmatterFromMarkdown(['yaml'])],
+	});
 	const children = astTree.children;
 
 	for (const child of children) {
@@ -50,8 +54,10 @@ const formatCodeBlocks = (srcPath) => {
 		}
 	}
 
-	const formatted = generate(astTree);
+	const formatted = generate(astTree, {
+		extensions: [frontmatterToMarkdown(['yaml'])],
+	});
 	fs.writeFileSync(srcPath, formatted);
 };
 
-scanDir('./docs');
+scanDir('./docs/guide');

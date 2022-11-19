@@ -1,6 +1,6 @@
-***
-
-## title: Introduction
+---
+title: Introduction
+---
 
 ## CPP Guide for Competitive Programming (HCI EC³)
 

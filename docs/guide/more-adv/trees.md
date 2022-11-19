@@ -1,10 +1,10 @@
-***
+---
 
 lang: en-us
-title: Data Structures
-----------------------
+title: Trees
+---
 
-# Data Strutures
+# Data Strutures (Trees)
 
 Skip this if your brain cells got murdered in the graph theory section
 

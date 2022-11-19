@@ -1,8 +1,8 @@
-***
+---
 
 lang: en-us
 title: Two pointers
--------------------
+---
 
 # Line sweep/sliding window
 

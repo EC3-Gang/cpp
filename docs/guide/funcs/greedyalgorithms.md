@@ -1,8 +1,8 @@
-***
+---
 
 lang: en-us
 title: Greedy Algorithms
-------------------------
+---
 
 # Greedy Algorithms
 

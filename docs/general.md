@@ -1,8 +1,8 @@
-***
+---
 
 lang: en-US
 title: General Tips
--------------------
+---
 
 ## General Tips
 

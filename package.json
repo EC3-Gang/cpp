@@ -36,6 +36,7 @@
 		"consola": "^2.15.3",
 		"katex": "^0.15.2",
 		"mdast-util-from-markdown": "^1.2.0",
+		"mdast-util-frontmatter": "^1.0.0",
 		"mdast-util-to-markdown": "^1.3.0",
 		"prettier": "^2.5.1",
 		"vuepress-plugin-giscus": "^2.0.0-alpha.26"

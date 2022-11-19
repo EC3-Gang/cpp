@@ -1,15 +1,14 @@
-***
-
+---
 lang: en-US
 title: STL Data Structures
---------------------------
+---
 
 ## STL Data Structures
 
 Here are some data structures found in the standard library and how to implement them,
 along with a few useful functions you should probably know about.
 
-\[\[toc]]
+[[toc]]
 
 ### Arrays
 

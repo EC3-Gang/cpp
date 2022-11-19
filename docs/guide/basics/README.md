@@ -1,8 +1,8 @@
-***
+---
 
 lang: en-us
 title: The Basics
------------------
+---
 
 # syntax
 

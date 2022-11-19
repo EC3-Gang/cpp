@@ -1,8 +1,7 @@
-***
-
+---
 lang: en-US
 title: Sructs and Classes
--------------------------
+---
 
 # Structs and Classes
 
