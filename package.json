@@ -27,7 +27,7 @@
 		"start": "yarn dev",
 		"dev": "NODE_ENV=development vuepress dev docs",
 		"build": "NODE_ENV=production BUILD_PATH=\"/\" vuepress build docs",
-		"lint": "eslint . --ext=.ts,.tsx,.js,.jsx",
+		"lint": "eslint . --ext=.ts,.tsx,.js,.jsx && yarn format:cpp",
 		"format:prettier": "prettier --write .",
 		"format:cpp": "node scripts/formatCpp.mjs"
 	},
