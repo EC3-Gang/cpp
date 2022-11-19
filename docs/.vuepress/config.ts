@@ -101,11 +101,23 @@ export default {
 		repo: 'EC3-Gang/cpp',
 		navbar: [
 			{
+				text: 'Songs',
+				children: [
+					{
+						text: 'List of songs to listen to while coding',
+						children: [
+							'/songs/erika.md',
+						],
+					},
+				],
+			},
+			{
 				text: 'Home',
 				link: '/',
 			},
 		],
 		sidebar: {
+			'/songs/': [],
 			'/': [
 				{
 					text: 'Introduction',
