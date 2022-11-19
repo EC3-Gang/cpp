@@ -1,8 +1,7 @@
 import { defaultTheme } from 'vuepress';
 import mdKatex from '@commenthol/markdown-it-katex';
 import typeMarkdownIt from 'markdown-it';
-import { escapeHtml } from 'markdown-it/lib/common/utils.js';
-import { execSync } from 'child_process';
+import { searchPlugin } from '@vuepress/plugin-search';
 
 export default {
 	port: 3000,
@@ -62,16 +61,13 @@ export default {
 		md.use(mdKatex);
 	},
 	plugins: [
-		[
-			'@vuepress/plugin-search',
-			{
-				locales: {
-					'/': {
-						placeholder: 'Search',
-					},
+		searchPlugin({
+			locales: {
+				'/': {
+					placeholder: 'Search',
 				},
 			},
-		],
+		}),
 		[
 			'@vuepress/plugin-shiki',
 			{

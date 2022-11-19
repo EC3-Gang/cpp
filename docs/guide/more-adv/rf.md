@@ -48,9 +48,13 @@ ll sum(ll n) {
 }
 
 int main() {
-  ll n;
-  cin >> n;
-  for (int i = 0; i < n + 1; i++) cout << sum(i) << '\n';
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	ll n;
+	cin >> n;
+	cout << sum(n) << endl;
 }
 ```
 
