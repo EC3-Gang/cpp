@@ -4,14 +4,14 @@ Recursive functions are functions which are called within the same function.
 Crazy, right?
 
 Pseudocode:
+```text
+function fn with variable A & B
+	if A smaller or equals to B
+		print a
+		recall function fn with variable A+1 and B
 
-    function fn with variable A & B
-      if A smaller or equals to B
-        print a
-        recall function fn with variable A+1 and B
-
-    fn(1, 10);
-
+fn(1, 10);
+```
 Output:
 
 ```text
