@@ -70,8 +70,8 @@ There are different versions for 64-bit and 32-bit editions.
 
 P.S. We don't quite recommend using Windows
 
-
 ### Running C++ with G++
+
 Shouldn't be that hard but in case you didn't know:
 
 ```sh
@@ -80,6 +80,7 @@ g++ <input file name> -o <output file name> -O2 && ./<output file name>
 
 You can alternatively use CMake but that's not the point of this guide.
 ::: details Example CMakeLists.txt
+
 ```cmake
 set(CMAKE_CXX_COMPILER g++-12)
 
@@ -90,10 +91,9 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(main main.cpp)
 ```
+
 :::
 
 ### Installing Clang
 
 Simply refer to [this](https://releases.llvm.org/download.html).
-
-
