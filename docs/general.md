@@ -18,7 +18,7 @@ Before I start, I thought that you should know that there are a few things that 
 4.  Instead of using "or", substitute it with "||" as "or" might not work and it will minimise troublesome situations
 
 5.  You are allowed to refer to algorithm codes that you already wrote beforehand but definitely NOT from other people/websites
-    :::
+:::
 
 ### Fast Input/Output
 
