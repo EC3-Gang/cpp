@@ -167,6 +167,142 @@ main = do
 ```
 
 </CodeGroupItem>
+<CodeGroupItem title="Go">
+
+```go{5-10}
+package main
+
+import "fmt"
+
+func sum(n int) int {
+	if n <= 1 {
+		return n
+	}
+	return sum(n-1) + sum(n-2)
+}
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(sum(n))
+}
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="C">
+
+```c{3-6}
+#include <stdio.h>
+
+int sum(int n) {
+	if (n <= 1) return n;
+	return sum(n - 1) + sum(n - 2);
+}
+
+int main() {
+	int n;
+	scanf("%d", &n);
+	printf("%d\n", sum(n));
+}
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="C#">
+
+```csharp{4-7}
+using System;
+
+class Program {
+	static int sum(int n) {
+		if (n <= 1) return n;
+		return sum(n - 1) + sum(n - 2);
+	}
+
+	static void Main(string[] args) {
+		int n = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine(sum(n));
+	}
+}
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="Ruby">
+
+```ruby{3-6}
+def sum(n)
+	if n <= 1
+		return n
+	end
+	return sum(n - 1) + sum(n - 2)
+end
+
+n = gets.chomp.to_i
+puts sum(n)
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="PHP">
+
+```php{2-5}
+<?php
+function sum($n) {
+	if ($n <= 1) return $n;
+	return sum($n - 1) + sum($n - 2);
+}
+
+$n = intval(fgets(STDIN));
+echo sum($n);
+?>
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="Swift">
+
+```swift{1-6}
+func sum(_ n: Int) -> Int {
+	if n <= 1 {
+		return n
+	}
+	return sum(n - 1) + sum(n - 2)
+}
+
+let n = Int(readLine()!)!
+print(sum(n))
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="Kotlin">
+
+```kotlin{1-4}
+fun sum(n: Int): Int {
+	if (n <= 1) return n
+	return sum(n - 1) + sum(n - 2)
+}
+
+fun main() {
+	val n = readLine()!!.toInt()
+	println(sum(n))
+}
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="Dart">
+
+```dart{3-7}
+import 'dart:io';
+
+int sum(int n) {
+	if (n <= 1) return n;
+	return sum(n - 1) + sum(n - 2);
+}
+
+void main() {
+	int n = int.parse(stdin.readLineSync());
+	print(sum(n));
+}
+```
+
+</CodeGroupItem>
 </CodeGroup>
 
 *The highlighted part is the recursive function.*
