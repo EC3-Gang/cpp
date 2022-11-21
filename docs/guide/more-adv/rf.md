@@ -139,6 +139,34 @@ rl.question('Enter a number: ', (n) => {
 ```
 
 </CodeGroupItem>
+<CodeGroupItem title="Haskell (1)">
+
+```hs{2-4}
+fibo :: Integer -> Integer
+fibo n
+	| n <= 1 = n
+	| otherwise = fibo (n - 1) + fibo (n - 2)
+
+main = do
+	n <- readLn
+	print (fibo n)
+```
+
+</CodeGroupItem>
+<CodeGroupItem title="Haskell (2)">
+
+```hs{4}
+fibo :: Integer -> Integer
+fibo 0 = 0
+fibo 1 = 1
+fibo n = fibo (n - 1) + fibo (n - 2)
+
+main = do
+	n <- readLn
+	print (fibo n)
+```
+
+</CodeGroupItem>
 </CodeGroup>
 
 *The highlighted part is the recursive function.*
