@@ -1,4 +1,4 @@
-import{_ as i,r as o,o as p,c as u,d as a,w as t,a as n,b as s,e as r}from"./app.d9fe0dc0.js";const k={},d=r(`<h1 id="recursive-functions" tabindex="-1"><a class="header-anchor" href="#recursive-functions" aria-hidden="true">#</a> Recursive Functions</h1><p>Recursive functions are functions which are called within the same function. Crazy, right?</p><p>Pseudocode:</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>function fn with variable A &amp; B
+import{_ as i,r as o,o as p,c as u,d as a,w as t,a as n,b as s,e as r}from"./app.b4054d93.js";const k={},d=r(`<h1 id="recursive-functions" tabindex="-1"><a class="header-anchor" href="#recursive-functions" aria-hidden="true">#</a> Recursive Functions</h1><p>Recursive functions are functions which are called within the same function. Crazy, right?</p><p>Pseudocode:</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>function fn with variable A &amp; B
 	if A smaller or equals to B
 		print a
 		recall function fn with variable A+1 and B
