@@ -4,6 +4,8 @@ lang: en-us
 title: Trees
 ---
 
+<WIP />
+
 # Data Strutures (Trees)
 
 Skip this if your brain cells got murdered in the graph theory section

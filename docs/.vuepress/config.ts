@@ -2,6 +2,8 @@ import { defaultTheme } from 'vuepress';
 import mdKatex from '@commenthol/markdown-it-katex';
 import typeMarkdownIt from 'markdown-it';
 import { searchPlugin } from '@vuepress/plugin-search';
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+import path from 'path';
 
 export default {
 	port: 3000,
@@ -61,6 +63,9 @@ export default {
 		md.use(mdKatex);
 	},
 	plugins: [
+		registerComponentsPlugin({
+			componentsDir: path.resolve(process.cwd(), './components'),
+		}),
 		searchPlugin({
 			locales: {
 				'/': {
